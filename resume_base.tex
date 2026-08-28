@@ -220,7 +220,9 @@
         % \end{onecolentry}
 
         \begin{onecolentry}
-Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Python to develop analytical models, machine learning workflows, and data-driven decision tools. \textbf{CFA Charterholder} with prior corporate banking experience. Available for a 6-month end-of-study internship starting in end-June 2026.
+% Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Python to develop analytical models, machine learning workflows, and data-driven decision tools. \textbf{CFA Charterholder} with prior corporate banking experience. Available for a 6-month end-of-study internship starting in end-June 2026.
+% Data Science graduate at ESSEC–CentraleSupélec, skilled in SQL and Python for analytical modeling and machine learning workflows. \textbf{CFA Charterholder} with prior corporate banking experience. Available for a 6-month end-of-study internship from end-June 2026.
+Analytics Engineer profile combining private capital domain depth (BNP Paribas Securities Services) with modern data stack experience — dimensional modeling, dbt pipelines, and data quality frameworks. \textbf{CFA Charterholder}. Seeking Analytics Engineer or Data Engineer roles.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -231,15 +233,34 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
         \vspace{0.2 cm}
 
     \section{Technical Skills}
+        % Old two-column paracol layout (replaced 2026-08-28 with single-column, AE-targeted categories):
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Programming:} Python, SQL (subqueries, window functions, CTEs), PySpark \\%, Excel VBA
+        % \textbf{Data:} PostgreSQL, MySQL, BigQuery
+        % \switchcolumn
+        % \textbf{Libraries:} Pandas, NumPy, scikit-Learn \\ %,  HuggingFace \\
+        % \textbf{Concepts:} Data modeling, ETL pipelines \\
+        % %\textbf{Tools:} Power BI (DAX, Power Query), Git (GitHub)%, Google Sheets, Jupyter % , Excel
+        % \textbf{Tools:} Power BI (DAX, Power Query), dbt, Git (GitHub)%, Google Sheets, Jupyter % , Excel
+        % \end{paracol}
+        % \end{onecolentry}
         \begin{onecolentry}
         \begin{paracol}{2}
-        
-        \textbf{Programming:} Python, SQL (subqueries, window functions, CTEs), PySpark \\%, Excel VBA
-        \textbf{Data:} PostgreSQL, MySQL, BigQuery
+
+        \textbf{Transformation:} dbt, SQL (CTEs, window functions,
+        subqueries) \\
+        \textbf{Warehousing:} PostgreSQL, DuckDB, Snowflake \\
+        \textbf{Modeling:} Dimensional modeling, SCD Type 2, grain,
+        data quality
+
         \switchcolumn
-        \textbf{Libraries:} Pandas, NumPy, scikit-Learn \\ %,  HuggingFace \\
-        \textbf{Concepts:} Data modeling, ETL pipelines \\
-        \textbf{Tools:} Power BI (DAX, Power Query), Git (GitHub)%, Google Sheets, Jupyter % , Excel
+
+        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\
+        \textbf{Programming:} Python, Git \\
+        \textbf{Big Data \& Cloud:} PySpark, AWS (familiar)
+
         \end{paracol}
         \end{onecolentry}
 
@@ -247,20 +268,37 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
 
     \section{Professional Experience}
         \begin{twocolentry}{
-            Jan 2026 – Present
+            Jul 2026 – Dec 2026
+        }
+            \textbf{Data Analyst Intern}, BNP Paribas Securities Services -- Pantin, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Designed a \textbf{dimensional model} for a private capital deal pipeline from scratch — grain declaration, \textbf{SCD Type 2} client versioning, surrogate keys, and \textbf{staging-to-mart} transformation across three source systems.
+                \item Built a \textbf{data quality framework} surfacing identity resolution failures, duplicate detection, and cross-source code inconsistencies in manually maintained private capital data.
+                %\item Delivered executive dashboards translating pipeline data into deal stage progression, service coverage, ESG breakdown, and top deal analytics for senior stakeholders.
+            \end{highlights}
+        \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Jan 2026 – Jun 2026
         }
         \textbf{Corporate Research Project - Data Analytics}, LVMH -- Paris, France \hfill
         \stronglink{https://github.com/Krishuang-1116/nlp_scent_finder}{Repo}
         \end{twocolentry}
-        
+
         \vspace{0.10 cm}
         \begin{onecolentry}
         \begin{highlights}
-            \item Developing a content-based \textbf{perfume recommendation system prototype}, enriching product descriptions to improve semantic representations and combining text similarity with structured olfactory-note reranking.
-            \item Implementing a two-stage ranking pipeline leveraging \textbf{sentence embeddings (all-mpnet-base-v2)}, cosine similarity, and weighted similarity metrics to improve recommendation relevance.
+            %\item Developing a content-based \textbf{perfume recommendation system prototype}, enriching product descriptions to improve semantic representations and combining text similarity with structured olfactory-note reranking.
+            %\item Implementing a two-stage ranking pipeline leveraging \textbf{sentence embeddings (all-mpnet-base-v2)}, cosine similarity, and weighted similarity metrics to improve recommendation relevance.
             %\item Structuring and enriching product datasets to support semantic search and downstream analytics applications.
             %\item Structuring and enriching product datasets to support analytics workflows and product insights.
-            \item Structuring product datasets and engineering features to support machine learning workflows.
+            %\item Structuring product datasets and engineering features to support machine learning workflows.
+            \item Contributed to an AI-powered fragrance recommendation system for Maison Loewe — covering market research across 12 luxury brands, similarity engine design (cosine + Jaccard over 238 perfumes), interactive scent map visualizations, and a multi-turn RAG chatbot with \textbf{LLM-as-judge} evaluation framework.
         \end{highlights}
         \end{onecolentry}
         
@@ -274,41 +312,41 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Rebuilt and modernized the \textbf{Promimmob real-estate finance simulator} used in graduate real estate finance courses, enabling scenario analysis and KPI monitoring dashboards through an \textbf{Excel VBA-based} financial modeling tool.
-                \item Implemented scenario protection logic and controlled input interfaces, achieving zero debugging requests since classroom deployment.
-                
+                %\item Rebuilt and modernized the \textbf{Promimmob real-estate finance simulator} for graduate finance courses, enabling scenario analysis and KPI monitoring dashboards through an \textbf{Excel VBA-based} financial modeling tool.
+                %\item Implemented scenario protection logic and controlled input interfaces, achieving zero debugging requests since classroom deployment.
+                \item Rebuilt the Promimmob real-estate finance simulator as an \textbf{Excel VBA}-based financial modeling tool, now deployed in graduate finance courses with zero debugging requests since classroom deployment.
             \end{highlights}
         \end{onecolentry}
 
 \vspace{0.2 cm}
 
-        \begin{twocolentry}{
-            Oct 2022 – Mar 2024
-        }
-            \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
+    % Commented out for one-page fit (2026-08-28) -- Guosen entry, oldest finance role, superseded by BNP:
+    %     \begin{twocolentry}{
+    %         Oct 2022 – Mar 2024
+    %     }
+    %         \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
+    %
+    %     \vspace{0.10 cm}
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %             \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
+    %         \end{highlights}
+    %     \end{onecolentry}
+    %
+    % \vspace{0.2 cm}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
-                
-            \end{highlights}
-        \end{onecolentry}
-
-        
-\vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            Jul 2019 – Aug 2021
-        }
-            \textbf{Management Trainee / Credit Analyst}, United Overseas Bank -- Shanghai, China\end{twocolentry}
-    
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Conducted \textbf{financial statement analysis} and credit risk assessment for corporate lending relationships within a ~SGD 500m portfolio, achieving zero default rate and supporting facility approval processes.
-            \end{highlights}
-        \end{onecolentry}
+    % Commented out for one-page fit (2026-08-28) -- UOB entry, superseded by BNP as lead experience:
+    %     \begin{twocolentry}{
+    %         Jul 2019 – Aug 2021
+    %     }
+    %         \textbf{Management Trainee / Credit Analyst}, United Overseas Bank -- Shanghai, China\end{twocolentry}
+    %
+    %     \vspace{0.10 cm}
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %             \item Conducted \textbf{financial statement analysis} and credit risk assessment for corporate lending relationships within a ~SGD 500m portfolio, achieving zero default rate and supporting facility approval processes.
+    %         \end{highlights}
+    %     \end{onecolentry}
 
 % \vspace{0.2 cm}
 
@@ -325,6 +363,24 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
 %         \end{onecolentry}
 
     \section{Selected Analytics Projects}
+        \begin{twocolentry}{
+        \stronglink{https://krishuang-1116.github.io/private_capital_pipeline/}{Repo}
+    }
+        \textbf{Private Capital Deal Pipeline Analytics (pc\_pipeline)} -
+        dbt \,|\, DuckDB \,|\, SQL \\
+        \end{twocolentry}
+
+        \vspace{0.10cm}
+
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a layered \textbf{dbt pipeline} (staging $\rightarrow$ intermediate $\rightarrow$ mart) modeling private-capital deal and fund data on a dimensional \textbf{star schema}.
+            \item Engineered a \textbf{dbt test suite} (generic + singular tests) covering 6 data-defect classes and QA checks drawn from real private capital data patterns, enforcing data quality pre-reporting.
+        \end{highlights}
+    \end{onecolentry}
+
+        \vspace{0.20cm}
+
         \begin{twocolentry}{\stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Repo} \,|\,
         \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Dashboard}
     }
@@ -339,7 +395,8 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
             %\item Designed and implemented a \textbf{PostgreSQL data warehouse} and \textbf{SQL transformation workflows} (normalized tables and a star schema) to consolidate multi-source sales data for analytics data modeling and reporting. %(fact + dimension)%.
             \item Designed and implemented a \textbf{PostgreSQL data warehouse} with \textbf{SQL transformation layers} and dimensional data models for KPI monitoring.
             %\item Developed SQL data-processing queries and interactive \textbf{Power BI dashboards} to monitor KPIs and identify sales performance anomalies.
-            \item{Translated business and product questions into structured analytical problems and developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
+            %\item{Translated business and product questions into structured analytical problems and developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
+            \item{Developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
             %\item Translated business requests into structured analyses and developed SQL queries and \textbf{Power BI dashboards} to support business teams.
             %\item{Developed SQL data queries and \textbf{Power BI dashboards}, supporting sales performance tracking, KPI monitoring and competitive market analysis.}
         \end{highlights}
@@ -361,34 +418,35 @@ Data Science graduate at ESSEC–CentraleSupélec with experience in SQL and Pyt
             %\item Engineered an end-to-end \textbf{PySpark data pipeline} processing 1M+ semi-structured records and developed Python notebooks for exploratory statistical analysis.
             %\item Analyzed 1M+ restaurant review records using \textbf{PySpark} to identify user behavior and geographic performance trends. %and developed Power BI dashboards to support data-driven insights.
             \item Built a \textbf{PySpark ETL pipeline} to process 1M+ semi-structured records and validated large-scale datasets before generating dashboards.
-            \item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
+            %\item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
             %\item Developed \textbf{Power BI geographic dashboards} with custom metrics and drill-through analysis.
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \stronglink{https://github.com/Krishuang-1116/DigitalBankingSegmentationProject}{Repo} \,|\,
-        \stronglink{https:///krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_active_vars.html}{Dashboard}
-    }
-        \textbf{Stratton Group Digital Banking Customer Segmentation} - 
-        Scikit-Learn \,|\, Plotly \\
-        \end{twocolentry}
-    
-        \vspace{0.10cm}
-    
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Performed customer segmentation modeling using PCA and K-Means clustering to identify 3,750 high-propensity segments from 10,750 observations (silhouette 0.81).
-            \item Developed interactive \textbf{Plotly dashboards} generating actionable insights for digital product marketing.
-        \end{highlights}
-    \end{onecolentry}
+    % Dropped for one-page fit (2026-08-28) -- Stratton Group project, least relevant to AE/DE targets:
+    % \vspace{0.2 cm}
+    %
+    %     \begin{twocolentry}{
+    %     \stronglink{https://github.com/Krishuang-1116/DigitalBankingSegmentationProject}{Repo} \,|\,
+    %     \stronglink{https:///krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_active_vars.html}{Dashboard}
+    % }
+    %     \textbf{Stratton Group Digital Banking Customer Segmentation} -
+    %     Scikit-Learn \,|\, Plotly \\
+    %     \end{twocolentry}
+    %
+    %     \vspace{0.10cm}
+    %
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item Performed customer segmentation modeling using PCA and K-Means clustering to identify 3,750 high-propensity segments from 10,750 observations (silhouette 0.81).
+    %         \item Developed interactive \textbf{Plotly dashboards} generating actionable insights for digital product marketing.
+    %     \end{highlights}
+    % \end{onecolentry}
 
     \vspace{0.2 cm}
 
     \section{Education}
-        \begin{twocolentry}{Sep 2024 – Jan 2027} %\\ GPA: 15.9/20}
+        \begin{twocolentry}{Sep 2024 – Jan 2027 \\ GPA: 15.51/20}
             \textbf{Essec Business School \& CentraleSupélec} \\
             \textit{Master in Data Science and Business Analytics — ESSEC Excellence Scholarship}
         \end{twocolentry}
