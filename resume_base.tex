@@ -54,7 +54,15 @@
     \usepackage{lmodern}
 \fi
 
-\usepackage{charter}
+% Charter typeface. pdfLaTeX path (Overleaf): unchanged. XeLaTeX/LuaLaTeX
+% (e.g. Tectonic) can't use the charter package, so load the XCharter family
+% via fontspec instead -- keeps real bold/italic and full Unicode coverage.
+\ifPDFTeX
+    \usepackage{charter}
+\else
+    \usepackage{fontspec}
+    \setmainfont{XCharter}
+\fi
 
 % Some settings:
 \raggedright

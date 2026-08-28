@@ -1,3 +1,16 @@
 CLAUDE.md
-output/
 .DS_Store
+settings.json
+
+# LaTeX build artifacts
+build/
+output/
+
+# Stray LaTeX outputs if a build ever runs without outDir
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
