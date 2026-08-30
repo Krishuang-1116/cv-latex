@@ -14,4 +14,7 @@ output/
 *.out
 *.synctex.gz
 *.toc
+
+# Other local only stuffs
 french/_content_fr.md
+jd-analyses/_learning-plan-2026-09.md
