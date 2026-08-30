@@ -1,0 +1,357 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1.6 cm, % seperation between body and page edge from the top
+    bottom=1.6 cm, % seperation between body and page edge from the bottom
+    left=1.7 cm, % seperation between body and page edge from the left
+    right=1.7 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={CV de Kris HUANG},
+    pdfauthor={Kris He HUANG},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    citecolor=blue
+}
+\usepackage{ulem}
+\normalem
+
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Charter typeface. pdfLaTeX path (Overleaf): unchanged. XeLaTeX/LuaLaTeX
+% (e.g. Tectonic) can't use the charter package, so load the XCharter family
+% via fontspec instead -- keeps real bold/italic and full Unicode coverage.
+\ifPDFTeX
+    \usepackage{charter}
+\else
+    \usepackage{fontspec}
+    \setmainfont{XCharter}
+\fi
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.18 cm
+}{
+    % bottom space:
+    0.10 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.04 cm,
+        parsep=0.02cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+% \newcommand{\stronglink}[2]{\href{#1}{\textbf{\ul{\textcolor{blue}{#2}}}}}
+\newcommand{\stronglink}[2]{%
+    \href{#1}{\textbf{\uline{\textcolor{blue}{#2}}}}%
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.04 cm,
+        parsep=0.02 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 3.8 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 3.8 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.2}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Kris He HUANG
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{Paris, France} \,|\,
+        \mbox{kris.huang@essec.edu} \,|\,
+        \mbox{tél : 06 69 38 81 06} \,|\,
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/kris-he-huang}{linkedin.com/in/kris-he-huang}} \,|\,
+        \mbox{\hrefWithoutArrow{https://github.com/Krishuang-1116}{github.com/krishuang}}
+
+        \vspace{3 pt}
+
+        \mbox{\textit{Langues : Chinois (langue maternelle) • Anglais (courant – TOEFL 120) • Français (DELF B2) • Japonais (JLPT N1)}}
+
+        \vspace{3 pt}
+
+        \mbox{\textit{Autorisation de travail : éligible au Passeport Talent (France)}}
+    \end{header}
+
+    \vspace{2 pt - 0.2 cm}
+
+
+    \section{Résumé}
+
+        \begin{onecolentry}
+Profil d'Analytics Engineer alliant une expertise du capital-investissement (BNP Paribas Securities Services) et la maîtrise d'une stack data moderne — modélisation dimensionnelle, pipelines dbt et qualité des données. \textbf{Titulaire du CFA.} À la recherche d'un poste d'Analytics Engineer ou de Data Engineer.
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+    \section{Compétences techniques}
+        \begin{onecolentry}
+        \begin{paracol}{2}
+
+        \textbf{Transformation :} dbt, SQL (CTE, fonctions de fenêtrage) \\
+        \textbf{Entreposage :} PostgreSQL, DuckDB, Snowflake \\
+        \textbf{Modélisation :} modélisation dimensionnelle, SCD Type 2, grain,
+        qualité des données
+
+        \switchcolumn
+
+        \textbf{BI \& Sémantique :} dbt Semantic Layer, Power BI (DAX)\\
+        \textbf{Programmation :} Python, Git \\
+        \textbf{Big Data \& Cloud :} PySpark, AWS (notions)
+
+        \end{paracol}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+    \section{Expérience professionnelle}
+        \begin{twocolentry}{
+            Juil 2026 – Déc 2026
+        }
+            \textbf{Data Analyst — Stage de fin d'études}, BNP Paribas Securities Services -- Pantin, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Conception d'un \textbf{modèle dimensionnel} de bout en bout pour un pipeline de deals en capital-investissement : grain, versionnement client \textbf{SCD Type 2}, clés de substitution et transformation « \textbf{staging-to-mart} » sur trois sources.
+                \item Mise en place d'un \textbf{framework de qualité de données} révélant les échecs de résolution d'identité, les doublons et les incohérences de codes inter-sources sur des données de capital-investissement maintenues manuellement.
+            \end{highlights}
+        \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Jan 2026 – Juin 2026
+        }
+        \textbf{Projet de recherche en entreprise — Data Analytics}, LVMH -- Paris, France \hfill
+        % \stronglink{https://github.com/Krishuang-1116/nlp_scent_finder}{Dépôt}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+        \begin{highlights}
+            \item Contribution à un système de recommandation de parfums pour la Maison Loewe — étude de marché sur 12 marques de luxe, moteur de similarité (cosinus + Jaccard, 238 parfums), cartographie olfactive interactive et chatbot RAG multi-tours avec évaluation « \textbf{LLM-as-judge} ».
+        \end{highlights}
+        \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Juil 2025 – Sept 2025
+        }
+            \textbf{Assistante de recherche}, ESSEC Business School -- Cergy, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Refonte du simulateur de finance immobilière Promimmob en outil de modélisation \textbf{Excel VBA}, aujourd'hui déployé dans les cours de finance de master sans demande de correction depuis son déploiement.
+            \end{highlights}
+        \end{onecolentry}
+
+\vspace{0.2 cm}
+
+    % UOB et Guosen : hors CV pour tenir sur une page (comme la version anglaise).
+
+    \section{Projets}
+        \begin{twocolentry}{
+        \stronglink{https://krishuang-1116.github.io/private_capital_pipeline/}{Dépôt}
+    }
+        \textbf{Pipeline de deals en capital-investissement (pc\_pipeline)} -
+        dbt \,|\, DuckDB \,|\, SQL \\
+        \end{twocolentry}
+
+        \vspace{0.10cm}
+
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ mart) sur un \textbf{schéma en étoile} dimensionnel.
+            \item \textbf{Suite de tests dbt} (génériques et singuliers) couvrant 6 classes de défauts issus de cas réels du capital-investissement.
+        \end{highlights}
+    \end{onecolentry}
+
+        \vspace{0.20cm}
+
+        \begin{twocolentry}{%
+        % Tableau de bord link commented out -- "Dépôt \,|\, Tableau de bord" wraps to 2 lines in the 3.8 cm column (French labels longer than EN); repo kept as the stronger link for AE/DE:
+        % \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Tableau de bord}
+        \stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Dépôt}
+    }
+        \textbf{Entrepôt de données Sales Analytics} -
+        PostgreSQL \,|\, Power BI \\
+        \end{twocolentry}
+
+        \vspace{0.10cm}
+
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Entrepôt de données PostgreSQL} avec \textbf{couches de transformation SQL} et modèles dimensionnels pour les KPI.
+            \item Requêtes SQL et \textbf{dashboards Power BI} pour détecter les anomalies de données et valider leur qualité.
+        \end{highlights}
+    \end{onecolentry}
+
+        \vspace{0.20cm}
+
+        \begin{twocolentry}{
+        \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Tableau de bord}
+    }
+        \textbf{Analytique des restaurants TripAdvisor} -
+        PySpark \,|\, Power BI \\
+        \end{twocolentry}
+
+        \vspace{0.10cm}
+
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Pipeline ETL PySpark} traitant plus d'un million d'enregistrements semi-structurés, validés à grande échelle avant reporting.
+        \end{highlights}
+    \end{onecolentry}
+
+    % Projet Stratton Group : hors CV pour tenir sur une page (comme la version anglaise).
+
+    \vspace{0.2 cm}
+
+    \section{Formation}
+        \begin{twocolentry}{Sept 2024 – Jan 2027 \\ Moyenne : 15,51/20}
+            \textbf{ESSEC Business School \& CentraleSupélec} \\
+            \textit{Master en Data Science et Business Analytics — Bourse d'excellence ESSEC}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{Juil 2017 – Juin 2018 \\ Moyenne : 3,76/4,00}
+            \textbf{Johns Hopkins University} \\
+            \textit{Master of Arts en Économie internationale et Finance}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+\end{document}
