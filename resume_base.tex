@@ -233,7 +233,9 @@
 % Analytics Engineer profile combining private capital domain depth (BNP Paribas Securities Services) with modern data stack experience — dimensional modeling, dbt pipelines, and data quality frameworks. \textbf{CFA Charterholder}. Seeking Analytics Engineer or Data Engineer roles.
 % Qonto v1 (from JD analysis, unused -- overclaims "ship ... production-grade models teams build dashboards on"):
 % Analytics Engineer specializing in dbt and dimensional modeling — I ship tested, production-grade data models teams build dashboards on, and treat data quality as a design constraint, not an afterthought. Backed by private-capital domain depth from BNP Paribas Securities Services. \textbf{CFA Charterholder}.
-Analytics Engineer working in dbt, SQL, and dimensional modeling, with an emphasis on data-quality testing. At BNP Paribas Securities Services, designed a dimensional model and built a data-quality framework for a private-capital deal pipeline; a personal dbt project applies the same layering and testing discipline. \textbf{CFA Charterholder}.
+% Analytics Engineer working in dbt, SQL, and dimensional modeling, with an emphasis on data-quality testing. At BNP Paribas Securities Services, designed a dimensional model and built a data-quality framework for a private-capital deal pipeline; a personal dbt project applies the same layering and testing discipline. \textbf{CFA Charterholder}.
+% Heuritech (Data Engineer) -- CFA dropped per Variant B rule:
+Data/Analytics Engineer who owns pipelines end-to-end — dbt models and tests in a layered warehouse, orchestrated with Airflow (idempotent DAGs, retries, dependency management), plus an LLM agent built over the semantic layer.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -257,20 +259,36 @@ Analytics Engineer working in dbt, SQL, and dimensional modeling, with an emphas
         % \textbf{Tools:} Power BI (DAX, Power Query), dbt, Git (GitHub)%, Google Sheets, Jupyter % , Excel
         % \end{paracol}
         % \end{onecolentry}
+        % Pre-Heuritech Variant B skills (AE / private-capital emphasis):
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Transformation:} dbt, SQL (CTEs, window functions,
+        % subqueries) \\
+        % \textbf{Modeling:} Dimensional modeling, SCD Type 2, grain,
+        % data quality \\
+        % \textbf{Warehousing:} PostgreSQL, DuckDB, Snowflake
+        %
+        % \switchcolumn
+        %
+        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\
+        % \textbf{Programming:} Python, Git \\
+        % \textbf{Domain:} private capital, fund administration, deal pipeline analytics
+        %
+        % \end{paracol}
+        % \end{onecolentry}
         \begin{onecolentry}
         \begin{paracol}{2}
 
-        \textbf{Transformation:} dbt, SQL (CTEs, window functions,
-        subqueries) \\
-        \textbf{Modeling:} Dimensional modeling, SCD Type 2, grain,
-        data quality \\
-        \textbf{Warehousing:} PostgreSQL, DuckDB, Snowflake
+        \textbf{Orchestration:} Airflow (DAGs, task groups, retries, idempotency) \\
+        \textbf{Transformation:} dbt (incremental models, tests), SQL (CTEs, window functions) \\
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
 
         \switchcolumn
 
-        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\
         \textbf{Programming:} Python, Git \\
-        \textbf{Domain:} private capital, fund administration, deal pipeline analytics
+        \textbf{Semantic \& AI:} dbt Semantic Layer (MetricFlow), LLM agent (NL-to-SQL) \\
+        \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality
 
         \end{paracol}
         \end{onecolentry}
@@ -375,18 +393,23 @@ Analytics Engineer working in dbt, SQL, and dimensional modeling, with an emphas
 
     \section{Selected Analytics Projects}
         \begin{twocolentry}{
-        \stronglink{https://krishuang-1116.github.io/private_capital_pipeline/}{Repo}
+        \stronglink{https://krishuang-1116.github.io/private_capital_pipeline/}{Demo}
     }
         \textbf{Private Capital Deal Pipeline Analytics (pc\_pipeline)} -
-        dbt \,|\, DuckDB \,|\, SQL \\
+        % dbt \,|\, DuckDB \,|\, SQL \\
+        dbt \,|\, Airflow \,|\, DuckDB \,|\, SQL \\
         \end{twocolentry}
 
         \vspace{0.10cm}
 
     \begin{onecolentry}
         \begin{highlights}
-            \item Built a layered \textbf{dbt pipeline} (staging $\rightarrow$ intermediate $\rightarrow$ mart) modeling private-capital deal and fund data on a dimensional \textbf{star schema}.
-            \item Engineered a \textbf{dbt test suite} (generic + singular tests) covering 6 data-defect classes and QA checks drawn from real private capital data patterns, enforcing data quality pre-reporting.
+            % \item Built a layered \textbf{dbt pipeline} (staging $\rightarrow$ intermediate $\rightarrow$ mart) modeling private-capital deal and fund data on a dimensional \textbf{star schema}.
+            % \item Engineered a \textbf{dbt test suite} (generic + singular tests) covering 6 data-defect classes and QA checks drawn from real private capital data patterns, enforcing data quality pre-reporting.
+            % Heuritech (Data Engineer) -- engineering-forward bullets:
+            \item Built a layered \textbf{dbt pipeline} (staging $\rightarrow$ intermediate $\rightarrow$ QA $\rightarrow$ mart) on a \textbf{star schema}, with an \textbf{incremental model} for late-arriving data and a \textbf{test suite} covering 6 defect classes from real private capital data patterns.
+            \item Orchestrated it with an \textbf{Airflow DAG} — task groups in strict dependency order, retries, and idempotent reruns.
+            \item Built an \textbf{LLM agent} over a \textbf{MetricFlow semantic layer} that translates natural-language questions into validated SQL.
         \end{highlights}
     \end{onecolentry}
 
