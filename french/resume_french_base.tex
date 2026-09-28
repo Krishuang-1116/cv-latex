@@ -244,6 +244,7 @@ Profil d'Analytics Engineer alliant une expertise du capital-investissement (BNP
             \begin{highlights}
                 \item Conception d'un \textbf{modèle dimensionnel} de bout en bout pour un pipeline de deals en capital-investissement : grain, versionnement client \textbf{SCD Type 2}, clés de substitution et transformation « \textbf{staging-to-mart} » sur trois sources.
                 \item Mise en place d'un \textbf{framework de qualité de données} révélant les échecs de résolution d'identité, les doublons et les incohérences de codes inter-sources sur des données de capital-investissement maintenues manuellement.
+                \item Automatisation de la propagation des deals d'un onglet central vers 20 onglets de suivi (ID deal, client, fonds).
             \end{highlights}
         \end{onecolentry}
 
@@ -286,15 +287,20 @@ Profil d'Analytics Engineer alliant une expertise du capital-investissement (BNP
         \stronglink{https://krishuang-1116.github.io/private_capital_pipeline/}{Démo}
     }
         \textbf{Pipeline de deals en capital-investissement (pc\_pipeline)} -
-        dbt \,|\, DuckDB \,|\, SQL \\
+        % dbt \,|\, DuckDB \,|\, SQL \\
+        dbt \,|\, Airflow \,|\, DuckDB \\
         \end{twocolentry}
 
         \vspace{0.10cm}
 
     \begin{onecolentry}
         \begin{highlights}
-            \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ mart) sur un \textbf{schéma en étoile} dimensionnel.
-            \item \textbf{Suite de tests dbt} (génériques et singuliers) couvrant 6 classes de défauts issus de cas réels du capital-investissement.
+            % \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ mart) sur un \textbf{schéma en étoile} dimensionnel.
+            % \item \textbf{Suite de tests dbt} (génériques et singuliers) couvrant 6 classes de défauts issus de cas réels du capital-investissement.
+            % Élargi 2026-09 (orchestration Airflow, modèle incrémental, couche sémantique, agent LLM) :
+            \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ QA $\rightarrow$ mart) sur un \textbf{schéma en étoile}, avec un \textbf{modèle incrémental} gérant les données tardives et une \textbf{suite de tests} couvrant 6 classes de défauts.
+            \item Orchestration par un \textbf{DAG Airflow} — dépendances strictes, relances, exécutions idempotentes.
+            \item \textbf{Agent LLM} sur une \textbf{couche sémantique MetricFlow} traduisant le langage naturel en SQL validé.
         \end{highlights}
     \end{onecolentry}
 
