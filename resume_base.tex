@@ -241,7 +241,9 @@
 % Tarmac (Analytics Engineer, customer analytics platform) -- analytics-as-a-product framing:
 % Analytics Engineer who ships analytics as a product — reliable dbt models, a semantic layer with consistent metric definitions, data-quality testing/governance, and an LLM/MCP agent for self-service insights. Owns problems end-to-end, from definition to production and adoption.
 % Alma (Analytics Engineer, Central Data) -- "Documentation-first, governance-minded" dropped (self-assessment tag, cf. "rigor-first"/Nao):
-Analytics Engineer building trusted data foundations — layered dbt models (staging $\rightarrow$ intermediate $\rightarrow$ mart), tests/freshness/docs, a semantic layer with consistent metric definitions, and an LLM agent enabling conversational, self-service analytics.
+% Analytics Engineer building trusted data foundations — layered dbt models (staging $\rightarrow$ intermediate $\rightarrow$ mart), tests/freshness/docs, a semantic layer with consistent metric definitions, and an LLM agent enabling conversational, self-service analytics.
+% Valtech (Data Engineer, Snowflake) -- "Reliability- and quality-first" dropped (self-assessment tag, cf. "rigor-first"/Nao/"Documentation-first"):
+Data/Analytics Engineer on the modern stack — dbt models with tests and documentation on Snowflake, Python ELT, Airflow orchestration (idempotent DAGs, retries), Git/CI-CD, plus an LLM agent over the warehouse.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -299,19 +301,35 @@ Analytics Engineer building trusted data foundations — layered dbt models (sta
         %
         % \end{paracol}
         % \end{onecolentry}
-        % Tarmac (AE product-forward: semantic layer + metrics + AI/MCP foregrounded):
+        % Tarmac/Alma (AE product-forward: semantic layer + metrics + AI/MCP foregrounded):
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Transformation:} dbt (incremental models, tests), SQL (CTEs, window functions) \\
+        % \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality \\
+        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        %
+        % \switchcolumn
+        %
+        % \textbf{Semantic \& Metrics:} dbt Semantic Layer (MetricFlow), metric definitions \\
+        % \textbf{AI:} LLM agent (NL-to-SQL), MCP integrations \\
+        % \textbf{Programming:} Python, Git, Airflow
+        %
+        % \end{paracol}
+        % \end{onecolentry}
+        % Valtech (DE on the modern stack: Warehousing + Orchestration + Git/CI-CD foregrounded):
         \begin{onecolentry}
         \begin{paracol}{2}
 
-        \textbf{Transformation:} dbt (incremental models, tests), SQL (CTEs, window functions) \\
-        \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality \\
-        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
+        \textbf{Transformation:} dbt (incremental models, tests, docs), SQL (CTEs, window functions) \\
+        \textbf{Orchestration:} Airflow (DAGs, retries, idempotency)
 
         \switchcolumn
 
-        \textbf{Semantic \& Metrics:} dbt Semantic Layer (MetricFlow), metric definitions \\
-        \textbf{AI:} LLM agent (NL-to-SQL), MCP integrations \\
-        \textbf{Programming:} Python, Git, Airflow
+        \textbf{Programming:} Python (ELT, APIs), Git (CI/CD) \\
+        \textbf{Semantic \& AI:} dbt Semantic Layer (MetricFlow), LLM agent (NL-to-SQL) \\
+        \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality
 
         \end{paracol}
         \end{onecolentry}
