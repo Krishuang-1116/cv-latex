@@ -235,7 +235,11 @@
 % Analytics Engineer specializing in dbt and dimensional modeling — I ship tested, production-grade data models teams build dashboards on, and treat data quality as a design constraint, not an afterthought. Backed by private-capital domain depth from BNP Paribas Securities Services. \textbf{CFA Charterholder}.
 % Analytics Engineer working in dbt, SQL, and dimensional modeling, with an emphasis on data-quality testing. At BNP Paribas Securities Services, designed a dimensional model and built a data-quality framework for a private-capital deal pipeline; a personal dbt project applies the same layering and testing discipline. \textbf{CFA Charterholder}.
 % Heuritech (Data Engineer) -- CFA dropped per Variant B rule:
-Data/Analytics Engineer who owns pipelines end-to-end — dbt models and tests in a layered warehouse, orchestrated with Airflow (idempotent DAGs, retries, dependency management), plus an LLM agent built over the semantic layer.
+% Data/Analytics Engineer who owns pipelines end-to-end — dbt models and tests in a layered warehouse, orchestrated with Airflow (idempotent DAGs, retries, dependency management), plus an LLM agent built over the semantic layer.
+% Alan (Data Engineer, Data Foundations) -- "Python + SQL, rigor-first" dropped per Kris (self-assessment, not evidence):
+% Data/Analytics Engineer who builds reliable data foundations others depend on — dbt models and tests in a layered Snowflake-style warehouse, Airflow orchestration (idempotent DAGs, retries), and an LLM agent over the semantic layer with data-quality guardrails.
+% Tarmac (Analytics Engineer, customer analytics platform) -- analytics-as-a-product framing:
+Analytics Engineer who ships analytics as a product — reliable dbt models, a semantic layer with consistent metric definitions, data-quality testing/governance, and an LLM/MCP agent for self-service insights. Owns problems end-to-end, from definition to production and adoption.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -277,18 +281,35 @@ Data/Analytics Engineer who owns pipelines end-to-end — dbt models and tests i
         %
         % \end{paracol}
         % \end{onecolentry}
+        % Heuritech/Alan (DE-forward: Orchestration first):
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Orchestration:} Airflow (DAGs, task groups, retries, idempotency) \\
+        % \textbf{Transformation:} dbt (incremental models, tests), SQL (CTEs, window functions) \\
+        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        %
+        % \switchcolumn
+        %
+        % \textbf{Programming:} Python, Git \\
+        % \textbf{Semantic \& AI:} dbt Semantic Layer (MetricFlow), LLM agent (NL-to-SQL) \\
+        % \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality
+        %
+        % \end{paracol}
+        % \end{onecolentry}
+        % Tarmac (AE product-forward: semantic layer + metrics + AI/MCP foregrounded):
         \begin{onecolentry}
         \begin{paracol}{2}
 
-        \textbf{Orchestration:} Airflow (DAGs, task groups, retries, idempotency) \\
         \textbf{Transformation:} dbt (incremental models, tests), SQL (CTEs, window functions) \\
+        \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality \\
         \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
 
         \switchcolumn
 
-        \textbf{Programming:} Python, Git \\
-        \textbf{Semantic \& AI:} dbt Semantic Layer (MetricFlow), LLM agent (NL-to-SQL) \\
-        \textbf{Modeling:} Dimensional modeling, SCD Type 2, data quality
+        \textbf{Semantic \& Metrics:} dbt Semantic Layer (MetricFlow), metric definitions \\
+        \textbf{AI:} LLM agent (NL-to-SQL), MCP integrations \\
+        \textbf{Programming:} Python, Git, Airflow
 
         \end{paracol}
         \end{onecolentry}
@@ -400,7 +421,9 @@ Data/Analytics Engineer who owns pipelines end-to-end — dbt models and tests i
     }
         \textbf{Private Capital Deal Pipeline Analytics (pc\_pipeline)} -
         % dbt \,|\, DuckDB \,|\, SQL \\
-        dbt \,|\, Airflow \,|\, DuckDB \,|\, SQL \\
+        % dbt \,|\, Airflow \,|\, DuckDB \,|\, SQL \\
+        % Snowflake swapped in 2026-09 (migration from DuckDB in progress -- revert if it stalls):
+        dbt \,|\, Airflow \,|\, Snowflake \,|\, SQL \\
         \end{twocolentry}
 
         \vspace{0.10cm}
