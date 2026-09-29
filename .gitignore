@@ -18,3 +18,7 @@ output/
 # Other local only stuffs
 french/_content_fr.md
 jd-analyses/_learning-plan-2026-09.md
+
+# Sponsor registers (bulky, refreshed on demand -- see reference/README.md)
+reference/*.csv
+reference/*.meta.json
