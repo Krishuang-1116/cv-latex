@@ -245,7 +245,9 @@
 % Valtech (Data Engineer, Snowflake) -- "Reliability- and quality-first" dropped (self-assessment tag, cf. "rigor-first"/Nao/"Documentation-first"):
 % Data/Analytics Engineer on the modern stack — dbt models with tests and documentation on Snowflake, Python ELT, Airflow orchestration (idempotent DAGs, retries), Git/CI-CD, plus an LLM agent over the warehouse.
 % Vallourec (Analytics Engineer, Group Data & Analytics) -- "Data-quality- and governance-first" dropped (self-assessment tag; 6th of that shape):
-Analytics Engineer building trusted, governed data models — dbt dimensional models with tests and documentation, a semantic layer (MetricFlow) with consistent metric definitions, and Power BI/DAX dashboards.
+% Analytics Engineer building trusted, governed data models — dbt dimensional models with tests and documentation, a semantic layer (MetricFlow) with consistent metric definitions, and Power BI/DAX dashboards.
+% Ledger (AE / Data Analyst, Consumer Sales & Marketing) -- CFA KEPT in the summary by exception (revenue/margin reconciliation, ExCom audience, crypto-finance product); the analysis's 4-sentence version was trimmed (would have cost ~2 lines):
+Analytics Engineer building reconciled, trusted models on dbt and Snowflake — dimensional modeling, cross-source reconciliation and data-quality checks, from a multi-source data model at BNP Paribas. Comfortable turning models into business recommendations with Python. \textbf{CFA Charterholder}.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -335,19 +337,35 @@ Analytics Engineer building trusted, governed data models — dbt dimensional mo
         %
         % \end{paracol}
         % \end{onecolentry}
-        % Vallourec (BI/governance-forward: Power BI + DAX are REQUIRED here and had been out of the block since Heuritech; MetricFlow surfaced as their rare "appreciated" match):
+        % % Vallourec (BI/governance-forward: Power BI + DAX are REQUIRED here and had been out of the block since Heuritech; MetricFlow surfaced as their rare "appreciated" match):
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
+        % \textbf{Modeling:} Dimensional modeling, fact tables/star schema, SCD Type 2 \\
+        % \textbf{Governance \& Quality:} dbt tests, documentation, lineage
+        %
+        % \switchcolumn
+        %
+        % \textbf{Semantic:} dbt Semantic Layer (MetricFlow), metric definitions \\
+        % \textbf{BI:} Power BI (DAX) \\
+        % \textbf{Programming:} Python, Git (CI/CD)
+        %
+        % \end{paracol}
+        % \end{onecolentry}
+        % Ledger (reconciliation-forward: Snowflake restored -- named in their requirements but absent since the Vallourec pass; no Tableau and no causal inference per Kris -- coursework only):
         \begin{onecolentry}
         \begin{paracol}{2}
 
         \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        \textbf{Modeling:} Dimensional modeling, fact tables/star schema, SCD Type 2 \\
-        \textbf{Governance \& Quality:} dbt tests, documentation, lineage
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
+        \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2
 
         \switchcolumn
 
-        \textbf{Semantic:} dbt Semantic Layer (MetricFlow), metric definitions \\
-        \textbf{BI:} Power BI (DAX) \\
-        \textbf{Programming:} Python, Git (CI/CD)
+        \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
+        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer (MetricFlow) \\
+        \textbf{Programming:} Python (pandas, statistics), Git
 
         \end{paracol}
         \end{onecolentry}
