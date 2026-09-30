@@ -234,7 +234,11 @@
 % Marktlink Capital (AE, Amsterdam) -- private-capital domain depth forward; CFA kept as domain evidence:
 % Analytics Engineer with private capital domain depth: designed a dimensional model for a private capital deal pipeline at BNP Paribas Securities Services (three source systems, SCD Type 2, data-quality framework), and built pc\_pipeline on dbt, Snowflake and Airflow — tested models, a semantic layer and an LLM agent. \textbf{CFA Charterholder}.
 % Booking Holdings Treasury (Data Analytics Engineer I) -- grain/history/reconciliation + orchestration + semantic layer forward; CFA in summary (Treasury = finance domain):
-Analytics Engineer with finance domain depth: dbt models on Snowflake with explicit grain and SCD Type 2 history, automated data-quality and reconciliation checks over three source systems (BNP Paribas Securities Services), Airflow orchestration with retries and idempotent reruns, and an LLM agent over a semantic layer. \textbf{CFA Charterholder}.
+% Analytics Engineer with finance domain depth: dbt models on Snowflake with explicit grain and SCD Type 2 history, automated data-quality and reconciliation checks over three source systems (BNP Paribas Securities Services), Airflow orchestration with retries and idempotent reruns, and an LLM agent over a semantic layer. \textbf{CFA Charterholder}.
+% Columbia Threadneedle (Data Engineer, Investment Analytics / Multi-Manager) -- investment-data + reporting
+% automation + manager-oversight forward; CFA kept bolded (in their preferred qualifications).
+% The analysis's text was 351 rendered chars vs the ~344 that fits 3 lines; dropped "structured" (340).
+Data engineer for investment teams: designed a dimensional model and data-quality framework for private capital data across three source systems at BNP Paribas Securities Services, and automated recurring reporting in Python and Power BI; previously monitored 100+ private equity products weekly with performance reports. \textbf{CFA Charterholder}.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -284,7 +288,11 @@ Analytics Engineer with finance domain depth: dbt models on Snowflake with expli
         % \textbf{Programming:} Python, Git, Claude Code \\
         \textbf{BI \& Semantic:} Power BI (DAX), Streamlit, dbt Semantic
         Layer (MetricFlow) \\
-        \textbf{Programming:} Python, PySpark, Git \\
+        % Columbia Threadneedle: PySpark -> Excel VBA. TripAdvisor (the PySpark evidence) is commented out
+        % for this variant, and VBA is evidenced by the ESSEC RA entry + the BNP deal-monitoring automation.
+        % R, Bloomberg and FactSet deliberately NOT added -- not held (R is advanced-required in the JD).
+        % \textbf{Programming:} Python, PySpark, Git \\  % Booking version
+        \textbf{Programming:} Python, Excel VBA, Git \\
         \textbf{Orchestration:} Airflow (DAGs, retries, idempotency)
 
         \end{paracol}
@@ -352,19 +360,22 @@ Analytics Engineer with finance domain depth: dbt models on Snowflake with expli
     % Guosen re-commented 2026-09-29 for Booking Treasury: the gate here is junior (1-3 yrs) so the extra
     % years aren't needed, CFA+BNP already carry finance domain, and secondary PE is not treasury.
     % Swapped back for TripAdvisor (PySpark is in their duties/stack). Restore the pair together.
-    % \begin{twocolentry}{
-    % Oct 2022 – Mar 2024
-    % }
-    % \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
-    %
-    % \vspace{0.10 cm}
-    % \begin{onecolentry}
-    % \begin{highlights}
-    % \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
-    % \end{highlights}
-    % \end{onecolentry}
-    %
-    % \vspace{0.2 cm}
+    % Guosen RESTORED 2026-09-30 for Columbia Threadneedle (Investment Analytics, Multi-Manager): weekly
+    % monitoring of 100+ approved PE products is the closest thing on file to multi-manager oversight and
+    % manager selection. TripAdvisor commented out to pay for it -- the documented swap pair.
+    \begin{twocolentry}{
+    Oct 2022 – Mar 2024
+    }
+    \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+    \begin{highlights}
+    \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
+    \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
 
     % Commented out for one-page fit (2026-08-28) -- UOB entry, superseded by BNP as lead experience:
     %     \begin{twocolentry}{
@@ -441,26 +452,28 @@ Analytics Engineer with finance domain depth: dbt models on Snowflake with expli
     \end{onecolentry}
 
     % TripAdvisor restored 2026-09-29 for Booking Treasury (PySpark is in their duties and stack).
-        \vspace{0.20cm}
-
-        \begin{twocolentry}{
-        \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Dashboard}
-    }
-        \textbf{TripAdvisor Restaurant Analytics} - 
-        PySpark \,|\, Power BI \\
-        \end{twocolentry}
-
-        \vspace{0.10cm}
-
-    \begin{onecolentry}
-        \begin{highlights}
-            %\item Engineered an end-to-end \textbf{PySpark data pipeline} processing 1M+ semi-structured records and developed Python notebooks for exploratory statistical analysis.
-            %\item Analyzed 1M+ restaurant review records using \textbf{PySpark} to identify user behavior and geographic performance trends. %and developed Power BI dashboards to support data-driven insights.
-            \item Built a \textbf{PySpark ETL pipeline} to process 1M+ semi-structured records and validated large-scale datasets before generating dashboards.
-            %\item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
-            %\item Developed \textbf{Power BI geographic dashboards} with custom metrics and drill-through analysis.
-        \end{highlights}
-    \end{onecolentry}
+    % TripAdvisor re-commented 2026-09-30 for Columbia Threadneedle: PySpark is not in their stack, and
+    % this pays the one-page cost of restoring Guosen. Restore the pair together.
+    %     \vspace{0.20cm}
+    %
+    %     \begin{twocolentry}{
+    %     \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Dashboard}
+    % }
+    %     \textbf{TripAdvisor Restaurant Analytics} -
+    %     PySpark \,|\, Power BI \\
+    %     \end{twocolentry}
+    %
+    %     \vspace{0.10cm}
+    %
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         %\item Engineered an end-to-end \textbf{PySpark data pipeline} processing 1M+ semi-structured records and developed Python notebooks for exploratory statistical analysis.
+    %         %\item Analyzed 1M+ restaurant review records using \textbf{PySpark} to identify user behavior and geographic performance trends. %and developed Power BI dashboards to support data-driven insights.
+    %         \item Built a \textbf{PySpark ETL pipeline} to process 1M+ semi-structured records and validated large-scale datasets before generating dashboards.
+    %         %\item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
+    %         %\item Developed \textbf{Power BI geographic dashboards} with custom metrics and drill-through analysis.
+    %     \end{highlights}
+    % \end{onecolentry}
 
     % Dropped for one-page fit (2026-08-28) -- Stratton Group project, least relevant to AE/DE targets:
     % \vspace{0.2 cm}
