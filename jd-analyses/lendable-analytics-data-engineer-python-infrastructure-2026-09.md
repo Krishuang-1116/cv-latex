@@ -11,12 +11,12 @@
 - Company: Lendable, UK fintech unicorn, 800+ people, profitable since 2017, expanding to the US.
 - Interview process: phone call → take-home coding exercise → 60-min technical video → 30-min culture → final.
 
-## UK work authorization (the real gate for all London roles)
-- No EU freedom of movement for the UK; France/NL routes don't carry over.
-- Option 1: High Potential Individual (HPI) visa. NO sponsor or job offer needed. Requires a degree from a listed top university, awarded within the last 5 years before you apply. UCLA and Johns Hopkins both appear on the current list (per a law-firm summary of the 2026 list); ESSEC/CentraleSupélec do not. ACTION: check the official GOV.UK HPI list and your UCLA / JHU award dates. If either degree is within 5 years, HPI is your strongest London card (2 years for bachelor's/master's). Verify duration and requirements on GOV.UK.
-- Option 2: Skilled Worker visa. Needs a licensed-sponsor employer. Salary: £41,700 or 100% of the occupation going rate, whichever is higher (since Jul 2025); new-entrant rate 70% of the going rate with a £33,400 floor, for under-26s / recent-graduate cases (criteria apply). Check Lendable on the UK Home Office register of licensed sponsors.
-- Moving to the UK also restarts the French residency timeline.
-- On forms: answer "Yes, I require sponsorship" unless you've confirmed HPI eligibility. If you have, say "Eligible for the HPI visa (no sponsorship required)", which is a real advantage.
+## UK work authorization (updated 2026-09-29 via reference/check_sponsor.py)
+- Sponsor: CONFIRMED. Lendable Operations Ltd (London) is on the UK Home Office register of licensed sponsors, Worker A rating, Skilled Worker route.
+- HPI: NOT available. JHU MA (2018) is outside the 5-year window; ESSEC/CentraleSupélec aren't on the list. UK roles therefore depend on Skilled Worker sponsorship.
+- Salary must clear £41,700 or the occupation going rate, whichever is higher (new-entrant rate: 70% of the going rate, £33,400 floor, criteria apply). Confirm the band early with the Talent Partner.
+- Right-to-work form answer: "I currently do not have the right to work in the UK and would require company visa sponsorship."
+- Moving to the UK restarts the French residency timeline.
 
 ## CV Tailoring Instructions (for Claude Code)
 Variant: B (General Modern Stack), Python-forward. ENGLISH CV.
@@ -64,14 +64,14 @@ Short. The role is "analytics engineering + Python to automate and build tools",
 - Cross-functional experience "a plus but not needed"
 
 ### Red Flags
-- UK visa: requires HPI eligibility or a licensed-sponsor Skilled Worker route at the salary threshold
+- UK visa: Skilled Worker only (sponsor confirmed); salary threshold must be met
 - 3 days in office in London (relocation)
 - JD is light on specifics ("no two days look the same")
 - No age-discrimination wording
 
 ## Notes
-- Verdict: APPLY (high fit). First confirm your HPI eligibility (it changes the whole London search), then tailor and submit.
-- If HPI works, London becomes a strong market: many in-house dbt/Snowflake fintechs, no sponsor dependency.
+- Verdict: APPLY (high fit). Sponsor confirmed. The remaining gate is the salary threshold; raise it early.
+- London pattern: filter for licensed sponsors (check_sponsor.py) + salary bands at or above the Skilled Worker threshold; HPI isn't an option.
 
 ## Sources (visa info, checked 2026-09-29; verify on GOV.UK)
 - HPI list summary: https://london-immigrationlawyer.co.uk/high-potential-individual-visa/universities/

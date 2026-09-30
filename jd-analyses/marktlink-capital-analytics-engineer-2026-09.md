@@ -1,6 +1,7 @@
 # Marktlink Capital — Analytics Engineer (greenfield platform) — Amsterdam — 2026-09
 
 ## Metadata
+- Status: REJECTED 2026-09-30 (Bart Schuil, Recruitment & HR Ops): location-based, prioritizing candidates already in NL; invited to reapply if relocating. Reply drafted confirming relocation at own initiative (sent).
 - Date: 2026-09-29
 - Fit Score: Medium. Best domain + stack match of the whole search: a PE/VC fund manager building a Fivetran → Snowflake → dbt platform from an empty account, integrating CRM (DealCloud/HubSpot), fund administration, portfolio monitoring and investor systems. That's pc_pipeline and your BNP private-capital model almost word for word, plus CFA, Streamlit/Power BI and Claude Code. It's held back by a hard seniority ask: 5+ years, prior "from scratch" platform build, sole owner of the architecture.
 - Tailoring effort: LOW–MEDIUM (Variant A: summary swap + skills-column reorder).

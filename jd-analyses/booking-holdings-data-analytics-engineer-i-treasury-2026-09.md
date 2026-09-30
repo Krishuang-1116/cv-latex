@@ -11,7 +11,7 @@
 - Company: Booking Holdings (Booking.com, Priceline, Agoda, KAYAK, OpenTable). Team: Treasury Data Science & Analytics, analysts + data scientists; you'd be the first and only Analytics Engineer.
 
 ## Before applying
-- IND sponsor: check the register for the employing entity (Booking.com B.V. / Booking Holdings entity in NL). Almost certainly recognised; verify as you did for Marktlink.
+- IND sponsor (checked 2026-09-29 via reference/check_sponsor.py): Booking Holdings B.V., Booking.com B.V. and ~9 more entities are recognised sponsors. Confirm which entity is on the contract.
 - "Local candidates prioritised": in the application/note, state it plainly: based in Paris, relocating to Amsterdam, available from Jan 2027 (after BNP ends Dec 2026), eligible via the NL orientation-year route / HSM with a recognised sponsor. Removes the uncertainty that gets non-local CVs filtered.
 
 ## CV Tailoring Instructions (for Claude Code)
