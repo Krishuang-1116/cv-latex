@@ -255,7 +255,12 @@
 % Lendable (AE / Python DE, London) -- Python-forward; CFA kept (consumer-credit fintech, light plus):
 % Analytics Engineer building on Snowflake, dbt and Python: tested dbt models (6 defect classes), Python tooling around them — an Airflow DAG, an LLM agent that turns natural-language questions into validated SQL, and a Streamlit app — plus a data-quality framework over three source systems at BNP Paribas. \textbf{CFA Charterholder}.
 % OpenTable BI Engineer (London) -- pipelines + applied AI + dashboards in one line; CFA out (not a finance role):
-Data and BI engineer combining pipelines with applied AI: Python/SQL ELT into Snowflake with dbt tests and Airflow orchestration, an LLM agent that turns business questions into validated SQL over a semantic layer, and a RAG chatbot with an LLM-as-judge evaluation framework. Dashboards in Power BI; data-quality framework at BNP Paribas.
+% Data and BI engineer combining pipelines with applied AI: Python/SQL ELT into Snowflake with dbt tests and Airflow orchestration, an LLM agent that turns business questions into validated SQL over a semantic layer, and a RAG chatbot with an LLM-as-judge evaluation framework. Dashboards in Power BI; data-quality framework at BNP Paribas.
+% Multiverse Analytics Engineer (London) -- Kimball + semantic layer for AI agents + AI-assisted dev; CFA out:
+% v1 (4 summary lines -> 2 pages): ... tested and documented dbt pipelines on Snowflake with Airflow, ...
+% v2 (still 4 lines): dropped "with Airflow" per the JD analysis's fallback order.
+% v3: also dropped "and documented" (2nd fallback). "docs" stays in the Transformation skills line.
+Analytics Engineer building trusted data models for AI-driven self-service: Kimball star schemas with SCD Type 2, tested dbt pipelines on Snowflake, and a dbt Semantic Layer that an LLM agent queries to turn business questions into validated SQL. AI-assisted development (Claude Code) as a daily workflow; data-quality framework at BNP Paribas.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -365,15 +370,20 @@ Data and BI engineer combining pipelines with applied AI: Python/SQL ELT into Sn
         \begin{onecolentry}
         \begin{paracol}{2}
 
+        % Ledger/OpenTable left-column order (Transformation / Warehousing / Modeling):
+        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
+        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
+        % \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2
+        % Multiverse: Modeling lifted above Warehousing (Kimball is the first screen on this JD):
         \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
-        \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2
+        \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2 \\
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
 
         \switchcolumn
 
-        \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
         % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer (MetricFlow) \\  % Ledger/Booking version
         \textbf{BI \& Semantic:} Power BI (DAX), Streamlit, dbt Semantic Layer \\
+        \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
         % \textbf{Programming:} Python (pandas, statistics), Git  % Ledger version
         % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % McKinsey version
         % GenAI NL role: PySpark is a stated REQUIREMENT and was absent from the block (only in the
@@ -381,7 +391,9 @@ Data and BI engineer combining pipelines with applied AI: Python/SQL ELT into Sn
         % \textbf{Programming:} Python, PySpark, Git, Streamlit  % GenAI NL / Lendable version
         % OpenTable: providers are Anthropic (pc_pipeline agent) and Gemini (LVMH RAG) -- NOT OpenAI,
         % which the JD names; claim what is true. Streamlit moved up to BI; PySpark stays in Projects.
-        \textbf{Programming:} Python, Git, LLM APIs (Anthropic, Gemini)
+        % \textbf{Programming:} Python, Git, LLM APIs (Anthropic, Gemini)  % OpenTable version
+        % Multiverse: AI coding tools are a stated requirement; Gemini dropped to keep one line.
+        \textbf{Programming:} Python, Git, AI coding tools (Claude Code), LLM APIs (Anthropic)
 
         \end{paracol}
         \end{onecolentry}
