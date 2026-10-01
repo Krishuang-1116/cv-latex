@@ -1,6 +1,7 @@
 # McKinsey & Company (QuantumBlack / Labs) — Data Engineer I — 2026-09
 
 ## Metadata
+- Status: REJECTED (2026-10-01): CV-stage rejection email
 - Date: 2026-09-29 (2000+ LinkedIn applicants)
 - Fit Score: Medium-High on fit, low odds on volume. One of your best profile matches so far: explicitly junior (0–2 years, internships/academic projects count), and the core is data foundations for LLM/RAG/agentic systems, which is exactly your differentiator (pc_pipeline NL→SQL agent over a semantic layer, LVMH RAG + LLM-as-judge, dbt data-quality tests). The only real risks are the applicant volume and "strong communication in English AND French" (you're B2).
 - Tailoring effort: LOW–MEDIUM (summary swap + one skills word, English CV).

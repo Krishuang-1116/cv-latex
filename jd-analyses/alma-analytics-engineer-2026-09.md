@@ -1,6 +1,7 @@
 # Alma — Analytics Engineer (Central Data) — 2026-09
 
 ## Metadata
+- Status: REJECTED (2026-10-01): CV-stage rejection email
 - Date: 2026-09-28
 - Fit Score: High — strong AE match on your exact modern stack (dbt, BigQuery, Looker, GCP, Git, Claude) with a medallion/semantic-layer/metric-consistency/data-quality/lineage mandate that is squarely your wheelhouse. Soft 2-year gate + strong inclusive language. Main caveats: an explicit mentoring/enablement expectation (training experienced analysts) that's a stretch for entry-level, and Looker/Argo/BigQuery are tool swaps.
 - Source: Direct paste
