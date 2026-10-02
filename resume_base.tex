@@ -238,7 +238,14 @@
 % Columbia Threadneedle (Data Engineer, Investment Analytics / Multi-Manager) -- investment-data + reporting
 % automation + manager-oversight forward; CFA kept bolded (in their preferred qualifications).
 % The analysis's text was 351 rendered chars vs the ~344 that fits 3 lines; dropped "structured" (340).
-Data engineer for investment teams: designed a dimensional model and data-quality framework for private capital data across three source systems at BNP Paribas Securities Services, and automated recurring reporting in Python and Power BI; previously monitored 100+ private equity products weekly with performance reports. \textbf{CFA Charterholder}.
+% Data engineer for investment teams: designed a dimensional model and data-quality framework for private capital data across three source systems at BNP Paribas Securities Services, and automated recurring reporting in Python and Power BI; previously monitored 100+ private equity products weekly with performance reports. \textbf{CFA Charterholder}.
+% Onmo (Analytics Engineer, credit card lender on Databricks) -- gold-layer modelling + governed metrics
+% + credit background; CFA kept, and "Former credit analyst (UOB)" is load-bearing (consumer-credit
+% background is an ESSENTIAL requirement, and UOB is restored below).
+% The analysis's text was 394 rendered chars against the ~344 that fits 3 lines -- the largest overrun
+% so far. Trimmed to 339: "explicit grain" -> "grain", "source systems" -> "sources", and the tail
+% "that answers only through governed definitions" folded into "governed metrics" earlier in the line.
+Analytics Engineer for credit and finance data: dimensional models with grain and SCD Type 2 point-in-time history, reconciliation and data-quality checks over three sources at BNP Paribas Securities Services, and governed metrics defined once in a semantic layer and served to an LLM agent. Former credit analyst (UOB). \textbf{CFA Charterholder}.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -292,7 +299,10 @@ Data engineer for investment teams: designed a dimensional model and data-qualit
         % for this variant, and VBA is evidenced by the ESSEC RA entry + the BNP deal-monitoring automation.
         % R, Bloomberg and FactSet deliberately NOT added -- not held (R is advanced-required in the JD).
         % \textbf{Programming:} Python, PySpark, Git \\  % Booking version
-        \textbf{Programming:} Python, Excel VBA, Git \\
+        % Onmo: Excel VBA -> PySpark. Databricks is their platform, and TripAdvisor is restored above as
+        % the PySpark evidence. Databricks itself NOT claimed until the Associate cert is passed.
+        % \textbf{Programming:} Python, Excel VBA, Git \\  % Columbia Threadneedle version
+        \textbf{Programming:} Python, PySpark, Git \\
         \textbf{Orchestration:} Airflow (DAGs, retries, idempotency)
 
         \end{paracol}
@@ -363,32 +373,37 @@ Data engineer for investment teams: designed a dimensional model and data-qualit
     % Guosen RESTORED 2026-09-30 for Columbia Threadneedle (Investment Analytics, Multi-Manager): weekly
     % monitoring of 100+ approved PE products is the closest thing on file to multi-manager oversight and
     % manager selection. TripAdvisor commented out to pay for it -- the documented swap pair.
-    \begin{twocolentry}{
-    Oct 2022 – Mar 2024
-    }
-    \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-    \begin{highlights}
-    \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
-    \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.2 cm}
+    % Guosen re-commented 2026-10-02 for Onmo: secondary PE product monitoring does nothing for a
+    % consumer-cards lender, and UOB (credit analysis) is the relevant entry. Guosen OUT / UOB IN.
+    % \begin{twocolentry}{
+    % Oct 2022 – Mar 2024
+    % }
+    % \textbf{Financial Product Analyst}, Guosen Securities Ltd -- Shenzhen, China\end{twocolentry}
+    %
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    % \begin{highlights}
+    % \item Analyzed secondary \textbf{private equity products}, monitored over 100 approved products weekly and produced structured performance reports and datasets for investment monitoring.
+    % \end{highlights}
+    % \end{onecolentry}
+    %
+    % \vspace{0.2 cm}
 
     % Commented out for one-page fit (2026-08-28) -- UOB entry, superseded by BNP as lead experience:
-    %     \begin{twocolentry}{
-    %         Jul 2019 – Aug 2021
-    %     }
-    %         \textbf{Management Trainee / Credit Analyst}, United Overseas Bank -- Shanghai, China\end{twocolentry}
-    %
-    %     \vspace{0.10 cm}
-    %     \begin{onecolentry}
-    %         \begin{highlights}
-    %             \item Conducted \textbf{financial statement analysis} and credit risk assessment for corporate lending relationships within a ~SGD 500m portfolio, achieving zero default rate and supporting facility approval processes.
-    %         \end{highlights}
-    %     \end{onecolentry}
+    % UOB RESTORED 2026-10-02 for Onmo: a consumer-credit/lending background is an ESSENTIAL requirement
+    % there, and this is the only credit role on file. Paid for by Guosen (above) and Sales Analytics
+    % (below). Re-comment it when the next target is not credit-led.
+        \begin{twocolentry}{
+            Jul 2019 – Aug 2021
+        }
+            \textbf{Management Trainee / Credit Analyst}, United Overseas Bank -- Shanghai, China\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Conducted \textbf{financial statement analysis} and credit risk assessment for corporate lending relationships within a ~SGD 500m portfolio, achieving zero default rate and supporting facility approval processes.
+            \end{highlights}
+        \end{onecolentry}
 
 % \vspace{0.2 cm}
 
@@ -428,52 +443,57 @@ Data engineer for investment teams: designed a dimensional model and data-qualit
         \end{highlights}
     \end{onecolentry}
 
-        \vspace{0.20cm}
-
-        \begin{twocolentry}{\stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Repo} \,|\,
-        \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Dashboard}
-    }
-        \textbf{Sales Analytics Data Warehouse} - 
-        PostgreSQL \,|\, Power BI \\
-        \end{twocolentry}
-    
-        \vspace{0.10cm}
-    
-    \begin{onecolentry}
-        \begin{highlights}
-            %\item Designed and implemented a \textbf{PostgreSQL data warehouse} and \textbf{SQL transformation workflows} (normalized tables and a star schema) to consolidate multi-source sales data for analytics data modeling and reporting. %(fact + dimension)%.
-            \item Designed and implemented a \textbf{PostgreSQL data warehouse} with \textbf{SQL transformation layers} and dimensional data models for KPI monitoring.
-            %\item Developed SQL data-processing queries and interactive \textbf{Power BI dashboards} to monitor KPIs and identify sales performance anomalies.
-            %\item{Translated business and product questions into structured analytical problems and developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
-            \item{Developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
-            %\item Translated business requests into structured analyses and developed SQL queries and \textbf{Power BI dashboards} to support business teams.
-            %\item{Developed SQL data queries and \textbf{Power BI dashboards}, supporting sales performance tracking, KPI monitoring and competitive market analysis.}
-        \end{highlights}
-    \end{onecolentry}
-
-    % TripAdvisor restored 2026-09-29 for Booking Treasury (PySpark is in their duties and stack).
-    % TripAdvisor re-commented 2026-09-30 for Columbia Threadneedle: PySpark is not in their stack, and
-    % this pays the one-page cost of restoring Guosen. Restore the pair together.
+    % Sales Analytics commented out 2026-10-02 for Onmo: the weakest of the three projects here --
+    % pc_pipeline and the BNP bullets already carry warehouse + dimensional modelling -- and it pays
+    % for UOB. Restore it when UOB goes back to commented.
     %     \vspace{0.20cm}
     %
-    %     \begin{twocolentry}{
-    %     \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Dashboard}
+    %     \begin{twocolentry}{\stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Repo} \,|\,
+    %     \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Dashboard}
     % }
-    %     \textbf{TripAdvisor Restaurant Analytics} -
-    %     PySpark \,|\, Power BI \\
+    %     \textbf{Sales Analytics Data Warehouse} -
+    %     PostgreSQL \,|\, Power BI \\
     %     \end{twocolentry}
     %
     %     \vspace{0.10cm}
     %
     % \begin{onecolentry}
     %     \begin{highlights}
-    %         %\item Engineered an end-to-end \textbf{PySpark data pipeline} processing 1M+ semi-structured records and developed Python notebooks for exploratory statistical analysis.
-    %         %\item Analyzed 1M+ restaurant review records using \textbf{PySpark} to identify user behavior and geographic performance trends. %and developed Power BI dashboards to support data-driven insights.
-    %         \item Built a \textbf{PySpark ETL pipeline} to process 1M+ semi-structured records and validated large-scale datasets before generating dashboards.
-    %         %\item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
-    %         %\item Developed \textbf{Power BI geographic dashboards} with custom metrics and drill-through analysis.
+    %         %\item Designed and implemented a \textbf{PostgreSQL data warehouse} and \textbf{SQL transformation workflows} (normalized tables and a star schema) to consolidate multi-source sales data for analytics data modeling and reporting. %(fact + dimension)%.
+    %         \item Designed and implemented a \textbf{PostgreSQL data warehouse} with \textbf{SQL transformation layers} and dimensional data models for KPI monitoring.
+    %         %\item Developed SQL data-processing queries and interactive \textbf{Power BI dashboards} to monitor KPIs and identify sales performance anomalies.
+    %         %\item{Translated business and product questions into structured analytical problems and developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
+    %         \item{Developed SQL queries and \textbf{Power BI dashboards} to detect data anomalies, supporting data quality validation.}
+    %         %\item Translated business requests into structured analyses and developed SQL queries and \textbf{Power BI dashboards} to support business teams.
+    %         %\item{Developed SQL data queries and \textbf{Power BI dashboards}, supporting sales performance tracking, KPI monitoring and competitive market analysis.}
     %     \end{highlights}
     % \end{onecolentry}
+
+    % TripAdvisor restored 2026-09-29 for Booking Treasury (PySpark is in their duties and stack).
+    % TripAdvisor re-commented 2026-09-30 for Columbia Threadneedle: PySpark is not in their stack, and
+    % this pays the one-page cost of restoring Guosen. Restore the pair together.
+    % TripAdvisor RESTORED 2026-10-02 for Onmo: Databricks is their platform, so PySpark needs on-CV
+    % evidence again (skills Programming line swaps Excel VBA back to PySpark).
+        \vspace{0.20cm}
+    
+        \begin{twocolentry}{
+        \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Dashboard}
+    }
+        \textbf{TripAdvisor Restaurant Analytics} -
+        PySpark \,|\, Power BI \\
+        \end{twocolentry}
+    
+        \vspace{0.10cm}
+    
+    \begin{onecolentry}
+        \begin{highlights}
+            %\item Engineered an end-to-end \textbf{PySpark data pipeline} processing 1M+ semi-structured records and developed Python notebooks for exploratory statistical analysis.
+            %\item Analyzed 1M+ restaurant review records using \textbf{PySpark} to identify user behavior and geographic performance trends. %and developed Power BI dashboards to support data-driven insights.
+            \item Built a \textbf{PySpark ETL pipeline} to process 1M+ semi-structured records and validated large-scale datasets before generating dashboards.
+            %\item Generated user behavior insights from \textbf{Power BI dashboards} to communicate key analytical findings to business stakeholders.
+            %\item Developed \textbf{Power BI geographic dashboards} with custom metrics and drill-through analysis.
+        \end{highlights}
+    \end{onecolentry}
 
     % Dropped for one-page fit (2026-08-28) -- Stratton Group project, least relevant to AE/DE targets:
     % \vspace{0.2 cm}
