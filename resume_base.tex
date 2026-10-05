@@ -279,7 +279,10 @@
 % Richemont Europe (Data Enablement / Analytics Engineer, Business Performance, Amsterdam) -- Kimball +
 % data quality + luxury LLM tooling; CFA kept by exception on Variant B (budget/forecasting/business
 % planning duties). 299 rendered chars, comfortably inside the ~344 three-line budget -- no trim needed.
-Analytics Engineer building Kimball-style dimensional models, dbt pipelines and data-quality frameworks (BNP Paribas Securities Services), plus LLM tooling for luxury retail: a similarity engine and RAG assistant for Maison Loewe (LVMH) and an LLM agent over a dbt semantic layer. \textbf{CFA Charterholder}.
+% Analytics Engineer building Kimball-style dimensional models, dbt pipelines and data-quality frameworks (BNP Paribas Securities Services), plus LLM tooling for luxury retail: a similarity engine and RAG assistant for Maison Loewe (LVMH) and an LLM agent over a dbt semantic layer. \textbf{CFA Charterholder}.
+% Adyen (Data Analyst, Revenue Operations, Amsterdam) -- pipelines + DQ + report automation; CFA out
+% (Variant B), it backs the Statistics skills line instead. 299 rendered chars, inside the ~344 budget.
+Data analyst with an engineering toolkit: built a data-quality framework across three manually maintained sources and automated recurring reporting in Python and Power BI at BNP Paribas Securities Services; layered dbt pipelines with tests, documentation and a semantic layer; PySpark, Airflow, Git.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -399,15 +402,24 @@ Analytics Engineer building Kimball-style dimensional models, dbt pipelines and 
         % keeps the line from wrapping to a third row). BigQuery/GCP deliberately NOT added.
         % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\  % Dojo order
         % \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2 \\
-        \textbf{Modeling:} Kimball dimensional modeling, SCD Type 2, grain \\
+        % Richemont left column:
+        % \textbf{Modeling:} Kimball dimensional modeling, SCD Type 2, grain \\
+        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
+        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        % Adyen: JD order Transformation -> Programming -> BI; Airflow folded into Programming (no
+        % separate Orchestration slot); Modeling dropped (not in the JD); Looker deliberately NOT added.
         \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        \textbf{Programming:} Python, PySpark, Airflow, Git \\
+        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer
 
         \switchcolumn
 
         % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer (MetricFlow) \\  % Ledger/Booking version
         % \textbf{BI \& Semantic:} Power BI (DAX), Streamlit, dbt Semantic Layer \\  % Ledger..Hellebore version
-        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\  % Dojo: Streamlit dropped, not relevant here
+        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\  % Dojo: Streamlit dropped, not relevant here
+        % Adyen: Statistics added (a stated "plus"); sources are the CFA QM curriculum and DSBA
+        % Statistical Inference + Econometrics (confirmed by Kris 2026-10-04).
+        \textbf{Statistics:} distributions, hypothesis testing, regression (CFA, MSc coursework) \\
         \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
         % \textbf{Programming:} Python (pandas, statistics), Git  % Ledger version
         % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % McKinsey version
@@ -422,7 +434,10 @@ Analytics Engineer building Kimball-style dimensional models, dbt pipelines and 
         % Hellebore: coding agents + both LLM providers (agent supervision is the job):
         % \textbf{Programming:} Python, Git, coding agents (Claude Code), LLM APIs (Anthropic, Gemini)
         % Dojo: coding agents kept (AI-assisted modelling is stated); LLM APIs dropped, not an AI role.
-        \textbf{Programming:} Python, Git, coding agents (Claude Code)
+        % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % Dojo/Richemont version
+        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB  % Adyen v1
+        % Adyen v2: Modeling restored in place of Warehousing (Kris) to hold 3+3; the JD names no warehouse.
+        \textbf{Modeling:} Kimball dimensional modeling, grain
 
         \end{paracol}
         \end{onecolentry}
