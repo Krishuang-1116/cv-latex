@@ -282,7 +282,13 @@
 % Analytics Engineer building Kimball-style dimensional models, dbt pipelines and data-quality frameworks (BNP Paribas Securities Services), plus LLM tooling for luxury retail: a similarity engine and RAG assistant for Maison Loewe (LVMH) and an LLM agent over a dbt semantic layer. \textbf{CFA Charterholder}.
 % Adyen (Data Analyst, Revenue Operations, Amsterdam) -- pipelines + DQ + report automation; CFA out
 % (Variant B), it backs the Statistics skills line instead. 299 rendered chars, inside the ~344 budget.
-Data analyst with an engineering toolkit: built a data-quality framework across three manually maintained sources and automated recurring reporting in Python and Power BI at BNP Paribas Securities Services; layered dbt pipelines with tests, documentation and a semantic layer; PySpark, Airflow, Git.
+% Data analyst with an engineering toolkit: built a data-quality framework across three manually maintained sources and automated recurring reporting in Python and Power BI at BNP Paribas Securities Services; layered dbt pipelines with tests, documentation and a semantic layer; PySpark, Airflow, Git.
+% Currys (Analytics Engineer, AI & Monetisation, London) -- dbt + dimensional modelling + self-service BI; CFA out
+% (Variant B). The analysis's text was 401 rendered chars; trimmed to ~345: dropped "Seeking Analytics
+% Engineer roles.", "Currently at" -> "At", "dimensional star schemas" -> "star schemas" (Modeling skills
+% line keeps "dimensional modeling"). v1 still ran to 4 lines ("stakeholders." wrapped) -> v2:
+% "manually maintained multi-source data" -> "manual multi-source data" (~332 chars).
+Analytics Engineer building trusted, tested data models — dbt pipelines (staging $\rightarrow$ intermediate $\rightarrow$ mart), star schemas, SCD Type 2 and data-quality frameworks — that feed self-service Power BI reporting. At BNP Paribas Securities Services, turning manual multi-source data into a documented, tested model for commercial stakeholders.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -408,9 +414,16 @@ Data analyst with an engineering toolkit: built a data-quality framework across 
         % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
         % Adyen: JD order Transformation -> Programming -> BI; Airflow folded into Programming (no
         % separate Orchestration slot); Modeling dropped (not in the JD); Looker deliberately NOT added.
+        % Adyen left column:
+        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
+        % \textbf{Programming:} Python, PySpark, Airflow, Git \\
+        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer
+        % Currys: JD order Transformation -> Modeling -> Warehousing (Snowflake named in the JD) -> BI.
+        % Looker/Omni/Databricks deliberately NOT added.
         \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        \textbf{Programming:} Python, PySpark, Airflow, Git \\
-        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer
+        % \textbf{Modeling:} Kimball dimensional modeling, SCD Type 2, grain \\  % wrapped to 2 rows here
+        \textbf{Modeling:} Dimensional modeling, SCD Type 2, grain \\
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
 
         \switchcolumn
 
@@ -419,7 +432,9 @@ Data analyst with an engineering toolkit: built a data-quality framework across 
         % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\  % Dojo: Streamlit dropped, not relevant here
         % Adyen: Statistics added (a stated "plus"); sources are the CFA QM curriculum and DSBA
         % Statistical Inference + Econometrics (confirmed by Kris 2026-10-04).
-        \textbf{Statistics:} distributions, hypothesis testing, regression (CFA, MSc coursework) \\
+        % \textbf{Statistics:} distributions, hypothesis testing, regression (CFA, MSc coursework) \\  % Adyen
+        % Currys: Statistics out (not in the JD); BI & Semantic moved here from the left column.
+        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\
         \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
         % \textbf{Programming:} Python (pandas, statistics), Git  % Ledger version
         % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % McKinsey version
@@ -437,7 +452,8 @@ Data analyst with an engineering toolkit: built a data-quality framework across 
         % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % Dojo/Richemont version
         % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB  % Adyen v1
         % Adyen v2: Modeling restored in place of Warehousing (Kris) to hold 3+3; the JD names no warehouse.
-        \textbf{Modeling:} Kimball dimensional modeling, grain
+        % \textbf{Modeling:} Kimball dimensional modeling, grain  % Adyen v2 (moved to the left column for Currys)
+        \textbf{Programming:} Python, PySpark, Airflow, Git
 
         \end{paracol}
         \end{onecolentry}
