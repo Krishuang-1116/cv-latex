@@ -2,7 +2,7 @@
 
 ## Metadata
 - Date: 2026-09-30
-- Status: To apply — existing CV, no tailored build (Kris's call: stretch role)
+- Status: REJECTED (2026-10-05)
 - Fit Score: Medium-Low — the domain and mission are a strong match (Finance migrating from spreadsheets to dbt/Airflow on AWS, reporting to the CFO), but it's a senior solo-owner role ("significant experience", "own the technical transformation", define the roadmap), plus Terraform/K8s/Athena/StarRocks gaps and a French-fluency requirement
 - Source: LinkedIn
 - Contract: unknown (likely CDI)

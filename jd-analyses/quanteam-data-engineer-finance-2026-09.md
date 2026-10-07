@@ -2,6 +2,7 @@
 
 ## Metadata
 - Date: 2026-09-29
+- Status: Recruiter phone screen 2026-10-06 (probable match: Kris recalled the firm as "Kantine"; confirm). Kris asked to switch to English; recruiter asked preferred industry/positions and will pass the profile to a business manager.
 - Fit Score: Medium. You clear the gate better than most juniors (a "première expérience" DE in banking/finance: BNP Paribas Securities Services is literally one of the client types they list, "dépositaires de titres", plus CFA), and SQL/Python/Spark/Airflow/dbt/PostgreSQL/AWS are all held. Desirability is low: an ESN placing you at banks is both off-lane categories at once (consultancy + traditional financial institution), and the stack list is a generic catch-all (Hadoop/Kafka/Scala/Oracle/Talend).
 - Tailoring effort: ZERO. The canonical French CV (`output/cv_kris_huang_fr.pdf`) already leads with private capital + BNP + CFA — exactly Variant A for this JD.
 - Source: LinkedIn (direct paste, French JD)

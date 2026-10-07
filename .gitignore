@@ -18,6 +18,7 @@ output/
 # Other local only stuffs
 french/_content_fr.md
 jd-analyses/_learning-plan-2026-09.md
+jd-analyses/_search-keywords-lux-dubai.md
 
 # Sponsor registers (bulky, refreshed on demand -- see reference/README.md)
 reference/*.csv
