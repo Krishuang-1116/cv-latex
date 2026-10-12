@@ -221,29 +221,38 @@
 % Data Engineer orientée fiabilité — conception de pipelines ELT (dbt, Airflow, SQL, Python) et de modèles de données testés et documentés, mis à disposition des équipes analytics et BI (Snowflake, Power BI). Mise en place d'un framework de qualité des données sur des sources hétérogènes chez BNP Paribas Securities Services.
 % CONVERTEO (Consultant Data Engineer junior, Hub Tech) -- « AI first » mis en avant (culture explicite du poste) ;
 % CFA hors résumé (cible conseil DE, il reste dans la formation) ; ni GCP ni Terraform ni Composer revendiqués.
-Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et documentés (dbt, Airflow, SQL, Python), agent LLM de restitution en langage naturel, développement quotidien avec des assistants de code (Claude Code). Framework de qualité des données sur trois sources chez BNP Paribas Securities Services.
+% Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et documentés (dbt, Airflow, SQL, Python), agent LLM de restitution en langage naturel, développement quotidien avec des assistants de code (Claude Code). Framework de qualité des données sur trois sources chez BNP Paribas Securities Services.
+% DATA & IA (conseil Data & IA / GenAI, 1re cible Deloitte) :
+Profil Data \& IA : pipeline dbt testé avec couche sémantique et agent LLM qui traduit des questions en langage naturel en SQL validé, chatbot RAG évalué par LLM-as-judge (LVMH) et workflow LangGraph (PaceFlow). Cadre de qualité des données sur des sources hétérogènes chez BNP Paribas. \textbf{Titulaire du CFA.}
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
     \section{Compétences techniques}
+        % Grille AE (feature/french) remplacée sur cette branche par une grille Data & IA en une colonne :
+        % \begin{onecolentry}
+        % \begin{paracol}{2}
+        %
+        % \textbf{Transformation :} dbt, SQL (CTE, fonctions de fenêtrage) \\
+        % \textbf{Entreposage :} Snowflake, PostgreSQL, DuckDB \\
+        % \textbf{Modélisation :} modélisation dimensionnelle, SCD Type 2, grain,
+        % qualité des données
+        %
+        % \switchcolumn
+        %
+        % % \textbf{Sémantique \& IA :} dbt Semantic Layer, agent LLM (langage naturel $\rightarrow$ SQL) \\
+        % % Power BI remis en avant : la dataviz est une exigence explicite de ce poste (l'agent LLM reste visible dans les projets)
+        % \textbf{BI \& Sémantique :} Power BI (DAX), dbt Semantic Layer \\
+        % \textbf{Programmation :} Python, Git, Airflow \\
+        % \textbf{Qualité :} tests dbt, documentation des modèles
+        %
+        % \end{paracol}
+        % \end{onecolentry}
         \begin{onecolentry}
-        \begin{paracol}{2}
-
-        \textbf{Transformation :} dbt, SQL (CTE, fonctions de fenêtrage) \\
-        \textbf{Entreposage :} Snowflake, PostgreSQL, DuckDB \\
-        \textbf{Modélisation :} modélisation dimensionnelle, SCD Type 2, grain,
-        qualité des données
-
-        \switchcolumn
-
-        % \textbf{Sémantique \& IA :} dbt Semantic Layer, agent LLM (langage naturel $\rightarrow$ SQL) \\
-        % Power BI remis en avant : la dataviz est une exigence explicite de ce poste (l'agent LLM reste visible dans les projets)
-        \textbf{BI \& Sémantique :} Power BI (DAX), dbt Semantic Layer \\
-        \textbf{Programmation :} Python, Git, Airflow \\
-        \textbf{Qualité :} tests dbt, documentation des modèles
-
-        \end{paracol}
+        \textbf{Données :} SQL (CTE, fonctions de fenêtrage), dbt (tests, docs), Airflow, PostgreSQL, Snowflake, DuckDB, PySpark \\
+        \textbf{IA générative :} API LLM (Gemini), RAG, embeddings, évaluation LLM-as-judge, LangGraph \\
+        \textbf{Qualité \& gouvernance :} tests dbt, détection de doublons et d'anomalies, réconciliation multi-sources \\
+        \textbf{Outils :} Python, Git, Power BI (DAX), Streamlit, agents de code (Claude Code)
         \end{onecolentry}
 
         \vspace{0.2 cm}
@@ -306,7 +315,11 @@ Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et 
         % dbt \,|\, Airflow \,|\, DuckDB \\
         % dbt \,|\, Airflow \,|\, Snowflake \\
         % Migration Snowflake non terminée (2026-10-08) : DuckDB actuel ; Snowflake (cible) affiché une fois terminé
-        dbt \,|\, Airflow \,|\, DuckDB \\
+        % dbt \,|\, Airflow \,|\, DuckDB \\
+        % DATA & IA : API LLM dans la ligne de stack
+        % dbt \,|\, Airflow \,|\, API LLM \,|\, DuckDB \\
+        % ligne de stack raccourcie pour tenir sur une ligne : pc_pipeline (DuckDB reste dans les compétences)
+        dbt \,|\, Airflow \,|\, API LLM \\
         \end{twocolentry}
 
         \vspace{0.10cm}
@@ -316,48 +329,89 @@ Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et 
             % \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ mart) sur un \textbf{schéma en étoile} dimensionnel.
             % \item \textbf{Suite de tests dbt} (génériques et singuliers) couvrant 6 classes de défauts issus de cas réels du capital-investissement.
             % Élargi 2026-09 (orchestration Airflow, modèle incrémental, couche sémantique, agent LLM) :
-            \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ QA $\rightarrow$ mart) sur un \textbf{schéma en étoile}, avec un \textbf{modèle incrémental} gérant les données tardives et une \textbf{suite de tests} couvrant 6 classes de défauts.
-            \item Orchestration par un \textbf{DAG Airflow} (dépendances strictes, relances, exécutions idempotentes).
-            \item \textbf{Agent LLM} sur une \textbf{couche sémantique MetricFlow} traduisant le langage naturel en SQL validé.
-        \end{highlights}
-    \end{onecolentry}
-
-        \vspace{0.20cm}
-
-        \begin{twocolentry}{%
-        % Tableau de bord link commented out -- "Dépôt \,|\, Tableau de bord" wraps to 2 lines in the 3.8 cm column (French labels longer than EN); repo kept as the stronger link for AE/DE:
-        % \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Tableau de bord}
-        \stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Dépôt}
-    }
-        \textbf{Entrepôt de données Sales Analytics} -
-        PostgreSQL \,|\, Power BI \\
-        \end{twocolentry}
-
-        \vspace{0.10cm}
-
-    \begin{onecolentry}
-        \begin{highlights}
-            \item \textbf{Entrepôt de données PostgreSQL} avec \textbf{couches de transformation SQL} et modèles dimensionnels pour les KPI.
-            \item Requêtes SQL et \textbf{dashboards Power BI} pour détecter les anomalies de données et valider leur qualité.
+            % \item Construction d'un \textbf{pipeline dbt} en couches (staging $\rightarrow$ intermediate $\rightarrow$ QA $\rightarrow$ mart) sur un \textbf{schéma en étoile}, avec un \textbf{modèle incrémental} gérant les données tardives et une \textbf{suite de tests} couvrant 6 classes de défauts.
+            % \item Orchestration par un \textbf{DAG Airflow} (dépendances strictes, relances, exécutions idempotentes).
+            % \item \textbf{Agent LLM} sur une \textbf{couche sémantique MetricFlow} traduisant le langage naturel en SQL validé.
+            % DATA & IA : dbt + Airflow en une puce ; architecture de l'agent rendue visible (cf. variant-ds)
+            \item Construction d'un \textbf{pipeline dbt} en couches sur un schéma en étoile, orchestré par \textbf{Airflow}, avec une suite de tests couvrant 6 classes de défauts issus de cas réels du capital-investissement.
+            \item \textbf{Agent LLM} sur une couche sémantique MetricFlow : extraction de chaque question en JSON structuré, contrôle de validation en Python qui refuse les demandes non prises en charge, et SQL généré à partir de templates.
         \end{highlights}
     \end{onecolentry}
 
         \vspace{0.20cm}
 
         \begin{twocolentry}{
-        \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Tableau de bord}
+        \stronglink{https://www.youtube.com/watch?v=iKtOmG7dsHc}{Démo}
     }
-        \textbf{Analytique des restaurants TripAdvisor} -
-        PySpark \,|\, Power BI \\
+        \textbf{PaceFlow, coach de course à pied par IA (projet de groupe)} -
+        % LangGraph \,|\, Gemini \,|\, FastAPI \,|\, GCP \\
+        % ligne de stack raccourcie pour tenir sur une ligne : PaceFlow (FastAPI reste dans la puce)
+        LangGraph \,|\, Gemini \,|\, GCP \\
         \end{twocolentry}
 
         \vspace{0.10cm}
 
     \begin{onecolentry}
         \begin{highlights}
-            \item \textbf{Pipeline ETL PySpark} traitant plus d'un million d'enregistrements semi-structurés, validés à grande échelle avant reporting.
+            \item Agent qui adapte des plans d'entraînement marathon à l'historique de course et aux objectifs de chaque utilisateur. Conception du \textbf{workflow LangGraph} et de son schéma d'état ; frontend Streamlit et backend FastAPI (Cloud Run, Cloud SQL) réalisés par l'équipe.
         \end{highlights}
     \end{onecolentry}
+
+%     % DATA & IA : MIMIC-IV retiré pour tenir sur une page (2026-10-12), règle : à retirer avant pc_pipeline ou PaceFlow
+%         \vspace{0.20cm}
+%
+%         \begin{twocolentry}{
+%         \stronglink{https://github.com/Krishuang-1116/ai-healthcare-final-project}{Dépôt}
+%     }
+%         \textbf{Prédiction de mortalité (MIMIC-IV)} -
+%         scikit-learn \,|\, XGBoost \,|\, TabICL \\
+%         \end{twocolentry}
+%
+%         \vspace{0.10cm}
+%
+%     \begin{onecolentry}
+%         \begin{highlights}
+%             \item Comparaison de 5 modèles (XGBoost, EBM, MLP, TabICL, régression logistique) sur 12\,424 séjours en réanimation (validation croisée stratifiée à 5 plis, GridSearchCV) ; TabICL obtient la meilleure discrimination (AUROC 0,755, AUPRC 0,527) et la meilleure calibration (Brier 0,141).
+%         \end{highlights}
+%     \end{onecolentry}
+
+    % DATA & IA : Sales DW et TripAdvisor retirés au profit de PaceFlow et MIMIC-IV :
+%         \vspace{0.20cm}
+%
+%         \begin{twocolentry}{%
+%         % Tableau de bord link commented out -- "Dépôt \,|\, Tableau de bord" wraps to 2 lines in the 3.8 cm column (French labels longer than EN); repo kept as the stronger link for AE/DE:
+%         % \stronglink{https://app.powerbi.com/view?r=eyJrIjoiNWYzYWQ5MzktMTE2ZC00ODA3LWE0ZWMtOTU2ZDMzMDM0ZTdiIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9}{Tableau de bord}
+%         \stronglink{https://github.com/Krishuang-1116/Sales_Analytics_Pipeline}{Dépôt}
+%     }
+%         \textbf{Entrepôt de données Sales Analytics} -
+%         PostgreSQL \,|\, Power BI \\
+%         \end{twocolentry}
+%
+%         \vspace{0.10cm}
+%
+%     \begin{onecolentry}
+%         \begin{highlights}
+%             \item \textbf{Entrepôt de données PostgreSQL} avec \textbf{couches de transformation SQL} et modèles dimensionnels pour les KPI.
+%             \item Requêtes SQL et \textbf{dashboards Power BI} pour détecter les anomalies de données et valider leur qualité.
+%         \end{highlights}
+%     \end{onecolentry}
+%
+%         \vspace{0.20cm}
+%
+%         \begin{twocolentry}{
+%         \stronglink{https://app.powerbi.com/view?r=eyJrIjoiYjMzYTk5NjktMDA4Mi00YmM2LWJhMGYtM2M0N2YzZWIwNDdkIiwidCI6IjYxZjNlM2I4LTliNTItNDMzYS1hNGViLWM2NzMzNGNlNTRkNSIsImMiOjh9&pageName=76c568acade65b1d5887}{Tableau de bord}
+%     }
+%         \textbf{Analytique des restaurants TripAdvisor} -
+%         PySpark \,|\, Power BI \\
+%         \end{twocolentry}
+%
+%         \vspace{0.10cm}
+%
+%     \begin{onecolentry}
+%         \begin{highlights}
+%             \item \textbf{Pipeline ETL PySpark} traitant plus d'un million d'enregistrements semi-structurés, validés à grande échelle avant reporting.
+%         \end{highlights}
+%     \end{onecolentry}
 
     % Projet Stratton Group : hors CV pour tenir sur une page (comme la version anglaise).
 
