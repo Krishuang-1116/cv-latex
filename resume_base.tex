@@ -218,6 +218,10 @@
 
 
     \section{Summary}
+        % RESET 2026-10-15: this branch tip = output/cv_kris_huang_analytics_engineer.pdf (from c97cfba + em-dash pass + CV audit).
+        % Earlier job tailorings on this branch (Multiverse, Hellebore, Dojo, Richemont, Adyen, Currys, ...) and their commented summaries:
+        %   git show 0b3115f:resume_base.tex
+        % Job-specific tailoring is not committed here; this tip stays the canonical.
 
         % \begin{onecolentry}
         % Data science graduate at ESSEC \& CentraleSupélec seeking a \textbf{six-month end-of-study internship starting July 2026}. Skilled in Python, SQL, data modeling and PowerBI. CFA chartholder with 3 years experience in finance industry. 
@@ -250,45 +254,8 @@
 % Analytics Engineer building reconciled, trusted models on dbt and Snowflake — dimensional modeling, cross-source reconciliation and data-quality checks, from a multi-source data model at BNP Paribas. Comfortable turning models into business recommendations with Python. \textbf{CFA Charterholder}.
 % McKinsey (QuantumBlack/Labs) Data Engineer I -- AI-forward; CFA kept (client-facing up to C-level):
 % Data engineer building data foundations for AI: a tested dbt pipeline on Snowflake with a semantic layer and an LLM agent that turns natural-language questions into validated SQL, and a RAG chatbot with LLM-as-judge evaluation (LVMH). Data-quality framework over heterogeneous sources at BNP Paribas. \textbf{CFA Charterholder}.
-% Data Analytics Engineer II (GenAI, NL, employer undisclosed) -- CFA out (general tech/product analytics target):
-% Analytics Engineer working on data for GenAI products: built an LLM-as-judge evaluation framework for a multi-turn RAG chatbot (LVMH), an LLM agent over a dbt semantic layer, and PySpark ETL over 1M+ semi-structured records. Tested, documented data models and a data-quality framework at BNP Paribas.
-% Lendable (AE / Python DE, London) -- Python-forward; CFA kept (consumer-credit fintech, light plus):
-% Analytics Engineer building on Snowflake, dbt and Python: tested dbt models (6 defect classes), Python tooling around them — an Airflow DAG, an LLM agent that turns natural-language questions into validated SQL, and a Streamlit app — plus a data-quality framework over three source systems at BNP Paribas. \textbf{CFA Charterholder}.
-% OpenTable BI Engineer (London) -- pipelines + applied AI + dashboards in one line; CFA out (not a finance role):
-% Data and BI engineer combining pipelines with applied AI: Python/SQL ELT into Snowflake with dbt tests and Airflow orchestration, an LLM agent that turns business questions into validated SQL over a semantic layer, and a RAG chatbot with an LLM-as-judge evaluation framework. Dashboards in Power BI; data-quality framework at BNP Paribas.
-% Multiverse Analytics Engineer (London) -- Kimball + semantic layer for AI agents + AI-assisted dev; CFA out:
-% v1 (4 summary lines -> 2 pages): ... tested and documented dbt pipelines on Snowflake with Airflow, ...
-% v2 (still 4 lines): dropped "with Airflow" per the JD analysis's fallback order.
-% v3: also dropped "and documented" (2nd fallback). "docs" stays in the Transformation skills line.
-% Analytics Engineer building trusted data models for AI-driven self-service: Kimball star schemas with SCD Type 2, tested dbt pipelines on Snowflake, and a dbt Semantic Layer that an LLM agent queries to turn business questions into validated SQL. AI-assisted development (Claude Code) as a daily workflow; data-quality framework at BNP Paribas.
-% Hellebore Capital AI Ops Engineer (Paris) -- agents + data quality + credit; CFA kept:
-% v1 (4 summary lines -> 2 pages): ... directing coding agents (Claude Code). ... / "duplicates and code inconsistencies"
-% v2 (still 4 lines): both JD-analysis fallbacks applied -- dropped "(Claude Code)" (it stays in the Programming skills line) and "duplicates and".
-% v3: fallbacks exhausted, so trimmed further for the 3-line budget -- "what it produces" -> "its output";
-%     dropped "private-capital" (Hellebore is credit, and the BNP bullet keeps the domain) and "(UOB)"
-%     (the UOB entry is commented out, so the summary was citing an employer absent from the page).
-%     Data-quality framework moved ahead of the LLM agent: it is the lead qualification for this role.
-% Data engineer who automates data-quality work and supervises its output: a data-quality framework resolving identity mismatches and code inconsistencies across three sources at BNP Paribas, an LLM agent that answers only through validated metrics, and daily work directing coding agents. \textbf{CFA Charterholder} with credit-analysis experience.
-% Dojo AE (Partnerships \& Sales Compensation) -- dbt + DQ + reusable metrics, warehouse-neutral; CFA kept (payout accuracy):
-% The analysis's text was 386 rendered chars vs the ~344 that fits 3 lines, and its own fallbacks
-% stopped at 353. Trimmed to 339: dropped "(Claude Code)" (kept in the Programming skills line),
-% "private-capital" (the BNP bullet carries the domain), and "data-quality" from the Python clause
-% (it was said twice; the framework clause keeps it). "reusable metrics" and "(6 defect classes)"
-% were protected -- both are stated JD language.
-% Analytics Engineer who builds data products where the numbers must be right: tested dbt models (6 defect classes), Airflow orchestration and Python automation, reusable metrics defined once in a semantic layer, and a data-quality framework reconciling three source systems at BNP Paribas. AI-assisted modelling and docs. \textbf{CFA Charterholder}.
-% Richemont Europe (Data Enablement / Analytics Engineer, Business Performance, Amsterdam) -- Kimball +
-% data quality + luxury LLM tooling; CFA kept by exception on Variant B (budget/forecasting/business
-% planning duties). 299 rendered chars, comfortably inside the ~344 three-line budget -- no trim needed.
-% Analytics Engineer building Kimball-style dimensional models, dbt pipelines and data-quality frameworks (BNP Paribas Securities Services), plus LLM tooling for luxury retail: a similarity engine and RAG assistant for Maison Loewe (LVMH) and an LLM agent over a dbt semantic layer. \textbf{CFA Charterholder}.
-% Adyen (Data Analyst, Revenue Operations, Amsterdam) -- pipelines + DQ + report automation; CFA out
-% (Variant B), it backs the Statistics skills line instead. 299 rendered chars, inside the ~344 budget.
-% Data analyst with an engineering toolkit: built a data-quality framework across three manually maintained sources and automated recurring reporting in Python and Power BI at BNP Paribas Securities Services; layered dbt pipelines with tests, documentation and a semantic layer; PySpark, Airflow, Git.
-% Currys (Analytics Engineer, AI & Monetisation, London) -- dbt + dimensional modelling + self-service BI; CFA out
-% (Variant B). The analysis's text was 401 rendered chars; trimmed to ~345: dropped "Seeking Analytics
-% Engineer roles.", "Currently at" -> "At", "dimensional star schemas" -> "star schemas" (Modeling skills
-% line keeps "dimensional modeling"). v1 still ran to 4 lines ("stakeholders." wrapped) -> v2:
-% "manually maintained multi-source data" -> "manual multi-source data" (~332 chars).
-Analytics Engineer building trusted, tested data models: dbt pipelines (staging $\rightarrow$ intermediate $\rightarrow$ mart), star schemas, SCD Type 2 and data-quality frameworks that feed self-service Power BI reporting. At BNP Paribas Securities Services, turning manual multi-source data into a documented, tested model for commercial stakeholders.
+% CV audit 2026-10-08: no "on Snowflake" until the migration is done
+Data engineer building data foundations for AI: a tested dbt pipeline with a semantic layer and an LLM agent that turns natural-language questions into validated SQL, and a RAG chatbot with LLM-as-judge evaluation (LVMH). Data-quality framework over heterogeneous sources at BNP Paribas. \textbf{CFA Charterholder}.
 
 %Data Science graduate at ESSEC–CentraleSupélec with experience in SQL, Python, and data analysis for financial reporting, risk indicator monitoring, and data quality validation. \textbf{CFA Charterholder} with prior corporate banking experience, combining technical analytics skills with a strong understanding of financial risk, compliance processes and banking operations. Available for a 6-month end-of-study internship starting in end-June 2026. 
 
@@ -398,62 +365,16 @@ Analytics Engineer building trusted, tested data models: dbt pipelines (staging 
         \begin{onecolentry}
         \begin{paracol}{2}
 
-        % Ledger/OpenTable left-column order (Transformation / Warehousing / Modeling):
-        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
-        % \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2
-        % Multiverse: Modeling lifted above Warehousing (Kimball is the first screen on this JD):
-        % Richemont: Modeling lifted to first and "Kimball" spelled out -- the JD names the Kimball
-        % methodology explicitly. cross-source reconciliation -> grain (not a Richemont keyword, and it
-        % keeps the line from wrapping to a third row). BigQuery/GCP deliberately NOT added.
-        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\  % Dojo order
-        % \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2 \\
-        % Richemont left column:
-        % \textbf{Modeling:} Kimball dimensional modeling, SCD Type 2, grain \\
-        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
-        % Adyen: JD order Transformation -> Programming -> BI; Airflow folded into Programming (no
-        % separate Orchestration slot); Modeling dropped (not in the JD); Looker deliberately NOT added.
-        % Adyen left column:
-        % \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        % \textbf{Programming:} Python, PySpark, Airflow, Git \\
-        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer
-        % Currys: JD order Transformation -> Modeling -> Warehousing (Snowflake named in the JD) -> BI.
-        % Looker/Omni/Databricks deliberately NOT added.
         \textbf{Transformation:} dbt (models, tests, docs), SQL (CTEs, window functions) \\
-        % \textbf{Modeling:} Kimball dimensional modeling, SCD Type 2, grain \\  % wrapped to 2 rows here
-        \textbf{Modeling:} Dimensional modeling, SCD Type 2, grain \\
-        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB
+        \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB \\
+        \textbf{Modeling:} Dimensional modeling, cross-source reconciliation, SCD Type 2
 
         \switchcolumn
 
-        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer (MetricFlow) \\  % Ledger/Booking version
-        % \textbf{BI \& Semantic:} Power BI (DAX), Streamlit, dbt Semantic Layer \\  % Ledger..Hellebore version
-        % \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\  % Dojo: Streamlit dropped, not relevant here
-        % Adyen: Statistics added (a stated "plus"); sources are the CFA QM curriculum and DSBA
-        % Statistical Inference + Econometrics (confirmed by Kris 2026-10-04).
-        % \textbf{Statistics:} distributions, hypothesis testing, regression (CFA, MSc coursework) \\  % Adyen
-        % Currys: Statistics out (not in the JD); BI & Semantic moved here from the left column.
-        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer \\
         \textbf{Quality:} dbt tests, duplicate and anomaly detection \\
+        \textbf{BI \& Semantic:} Power BI (DAX), dbt Semantic Layer (MetricFlow) \\
         % \textbf{Programming:} Python (pandas, statistics), Git  % Ledger version
-        % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % McKinsey version
-        % GenAI NL role: PySpark is a stated REQUIREMENT and was absent from the block (only in the
-        % TripAdvisor project line); Streamlit is one of their nice-to-haves:
-        % \textbf{Programming:} Python, PySpark, Git, Streamlit  % GenAI NL / Lendable version
-        % OpenTable: providers are Anthropic (pc_pipeline agent) and Gemini (LVMH RAG) -- NOT OpenAI,
-        % which the JD names; claim what is true. Streamlit moved up to BI; PySpark stays in Projects.
-        % \textbf{Programming:} Python, Git, LLM APIs (Anthropic, Gemini)  % OpenTable version
-        % Multiverse: AI coding tools are a stated requirement; Gemini dropped to keep one line.
-        % \textbf{Programming:} Python, Git, AI coding tools (Claude Code), LLM APIs (Anthropic)
-        % Hellebore: coding agents + both LLM providers (agent supervision is the job):
-        % \textbf{Programming:} Python, Git, coding agents (Claude Code), LLM APIs (Anthropic, Gemini)
-        % Dojo: coding agents kept (AI-assisted modelling is stated); LLM APIs dropped, not an AI role.
-        % \textbf{Programming:} Python, Git, coding agents (Claude Code)  % Dojo/Richemont version
-        % \textbf{Warehousing:} Snowflake, PostgreSQL, DuckDB  % Adyen v1
-        % Adyen v2: Modeling restored in place of Warehousing (Kris) to hold 3+3; the JD names no warehouse.
-        % \textbf{Modeling:} Kimball dimensional modeling, grain  % Adyen v2 (moved to the left column for Currys)
-        \textbf{Programming:} Python, PySpark, Airflow, Git
+        \textbf{Programming:} Python, Git, coding agents (Claude Code)
 
         \end{paracol}
         \end{onecolentry}
