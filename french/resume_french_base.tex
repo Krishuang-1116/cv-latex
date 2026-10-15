@@ -206,22 +206,13 @@
 
 
     \section{Résumé}
+        % REMISE À ZÉRO 2026-10-15 : la tête de branche = output/cv_kris_huang_fr.pdf (depuis 719143f + passe tirets cadratins + audit CV).
+        % Adaptations antérieures (Elax, Sia, supply chain, NEXTON, Converteo) et leurs résumés commentés :
+        %   git show a4c19ed:french/resume_french_base.tex
+        % Les adaptations par offre ne sont pas commitées ici ; cette tête reste le CV canonique.
 
         \begin{onecolentry}
-% Profil d'Analytics Engineer alliant une expertise du capital-investissement (BNP Paribas Securities Services) et la maîtrise d'une stack data moderne — modélisation dimensionnelle, pipelines dbt et qualité des données. \textbf{Titulaire du CFA.} À la recherche d'un poste d'Analytics Engineer ou de Data Engineer.
-% Elax Energie (Analytics Engineer) -- CFA retiré (règle variante B) ; Snowflake gardé au lieu de BigQuery :
-% Analytics Engineer spécialisée en dbt, SQL et modélisation dimensionnelle sur Snowflake, avec une rigueur forte sur la qualité, les tests et la documentation. J'ai construit une couche sémantique et un agent IA (langage naturel $\rightarrow$ SQL validé) — exactement la logique qui rend un outil comme Nao fiable.
-% Nao retiré du résumé (nom d'outil interne = flatterie sur un CV ; garder pour la lettre) ; « rigueur forte » remplacé par la pratique :
-% Analytics Engineer spécialisée en dbt, SQL et modélisation dimensionnelle sur Snowflake, avec des tests et une documentation systématiques. J'ai construit une couche sémantique et un agent IA (langage naturel $\rightarrow$ SQL validé) sur des modèles documentés.
-% Sia Partners (Consultant Analytics Engineer) -- « vraie rigueur » et « sens du dialogue métier » remplacés par des faits ancrés (cf. rigor-first / Nao / Documentation-first) :
-% Analytics Engineer sur stack moderne (dbt, Snowflake, Airflow, SQL avancé) — pipeline en couches testé et documenté, couche sémantique et agent IA de restitution en langage naturel. Habituée à traduire des besoins métier en modèles fiables (BNP Paribas Securities Services).
-% Conseil supply chain (via Licorne Society) -- ouverture recentrée sur le pilotage de la performance : le résumé finance/CFA amplifiait justement l'écart de domaine filtré par le recruteur. « Vraie rigueur data » / « sens du dialogue métier » écartés (auto-évaluation) :
-% Analytics Engineer / Data Analyst — SQL avancé, dbt, Snowflake et data visualisation (Power BI). Expérience du pilotage de la performance par la donnée : dashboards, monitoring de KPI et fiabilisation des indicateurs (BNP Paribas Securities Services).
-% NEXTON (Data Engineer, mission client : usages et abonnements) :
-% Data Engineer orientée fiabilité — conception de pipelines ELT (dbt, Airflow, SQL, Python) et de modèles de données testés et documentés, mis à disposition des équipes analytics et BI (Snowflake, Power BI). Mise en place d'un framework de qualité des données sur des sources hétérogènes chez BNP Paribas Securities Services.
-% CONVERTEO (Consultant Data Engineer junior, Hub Tech) -- « AI first » mis en avant (culture explicite du poste) ;
-% CFA hors résumé (cible conseil DE, il reste dans la formation) ; ni GCP ni Terraform ni Composer revendiqués.
-Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et documentés (dbt, Airflow, SQL, Python), agent LLM de restitution en langage naturel, développement quotidien avec des assistants de code (Claude Code). Framework de qualité des données sur trois sources chez BNP Paribas Securities Services.
+Profil d'Analytics Engineer alliant une expertise du capital-investissement (BNP Paribas Securities Services) et la maîtrise d'une stack data moderne : modélisation dimensionnelle, pipelines dbt et qualité des données. \textbf{Titulaire du CFA.} À la recherche d'un poste d'Analytics Engineer ou de Data Engineer.
         \end{onecolentry}
 
         \vspace{0.2 cm}
@@ -231,17 +222,15 @@ Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et 
         \begin{paracol}{2}
 
         \textbf{Transformation :} dbt, SQL (CTE, fonctions de fenêtrage) \\
-        \textbf{Entreposage :} Snowflake, PostgreSQL, DuckDB \\
+        \textbf{Entreposage :} PostgreSQL, DuckDB, Snowflake \\
         \textbf{Modélisation :} modélisation dimensionnelle, SCD Type 2, grain,
         qualité des données
 
         \switchcolumn
 
-        % \textbf{Sémantique \& IA :} dbt Semantic Layer, agent LLM (langage naturel $\rightarrow$ SQL) \\
-        % Power BI remis en avant : la dataviz est une exigence explicite de ce poste (l'agent LLM reste visible dans les projets)
-        \textbf{BI \& Sémantique :} Power BI (DAX), dbt Semantic Layer \\
-        \textbf{Programmation :} Python, Git, Airflow \\
-        \textbf{Qualité :} tests dbt, documentation des modèles
+        \textbf{BI \& Sémantique :} dbt Semantic Layer, Power BI (DAX)\\
+        \textbf{Programmation :} Python, Git \\
+        \textbf{Big Data \& Cloud :} PySpark, AWS (notions)
 
         \end{paracol}
         \end{onecolentry}
@@ -303,9 +292,6 @@ Data Engineer orientée fiabilité et « AI first » : pipelines ELT testés et 
     }
         \textbf{Pipeline de deals en capital-investissement (pc\_pipeline)} -
         % dbt \,|\, DuckDB \,|\, SQL \\
-        % dbt \,|\, Airflow \,|\, DuckDB \\
-        % dbt \,|\, Airflow \,|\, Snowflake \\
-        % Migration Snowflake non terminée (2026-10-08) : DuckDB actuel ; Snowflake (cible) affiché une fois terminé
         dbt \,|\, Airflow \,|\, DuckDB \\
         \end{twocolentry}
 
