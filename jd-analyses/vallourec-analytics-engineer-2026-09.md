@@ -2,6 +2,7 @@
 
 ## Metadata
 - Date: 2026-09-29
+- Status: OPEN, no reply. A Vallourec recruiter viewed Kris's LinkedIn profile in early October 2026 (per Kris, 2026-10-13); no next steps yet. Application date not logged.
 - Fit Score: High — you hit EVERY required skill, you have MetricFlow + semantic layer (a specific "appreciated" item few candidates can claim), the gate is one of the softest in the batch ("première expérience / successful first experience"), and it's an IN-HOUSE corporate data team (not a consultancy). English CV acceptable (bilingual, international). Mild reservations: Power-BI/DAX-forward, KPI-governance-heavy corporate work; Microsoft-adjacent (Fabric appreciated); industrial domain new; your AI-agent differentiation isn't specifically rewarded (no AI in the JD).
 - Source: Direct paste (bilingual FR/EN JD)
 - Contract: Not stated (CDI expected) — HQ Meudon (Paris)

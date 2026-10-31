@@ -1,7 +1,7 @@
 # Multiverse — Analytics Engineer — 2026-09
 
 ## Metadata
-- Status: APPLIED 2026-09-30 ("Why Multiverse?" answered: semantic layer for AI agents + upskilling mission)
+- Status: REJECTED 2026-10-07 (previously: APPLIED 2026-09-30 ("Why Multiverse?" answered: semantic layer for AI agents + upskilling mission))
 - Date: 2026-09-30
 - Fit Score: HIGH. dbt + Kimball (facts, dims, SCDs) + dbt tests/docs + a semantic layer built for AI agents over MCP + AI-assisted development as the normal workflow. That covers pc_pipeline (star schema, SCD2, dbt tests, dbt Semantic Layer + LLM agent) and the way you build (Claude Code). Snowflake/Airflow/semantic layer/CI are all "desirable", and you have them. No year gate stated. Main gap: "production dbt" (your dbt is portfolio; BNP modelling was done without dbt).
 - Tailoring effort: LOW–MEDIUM. The OpenTable build is NOT the right one (see below). A new summary + one skills line.

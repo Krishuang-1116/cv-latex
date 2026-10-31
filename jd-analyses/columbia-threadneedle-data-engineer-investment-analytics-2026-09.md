@@ -2,7 +2,7 @@
 
 ## Metadata
 - Date: 2026-09-30
-- Status: To apply — tailored Variant A build (instructions below)
+- Status: REJECTED 2026-10-18 (applied ~2026-09-30/10, tailored Variant A). Likely cause: UK sponsorship need filtered at screening (matches Fospha / Curve / Seccl / Zego pattern); secondary gaps R and quant attribution work.
 - Fit Score: Medium-High — the domain is an unusually close match (investment data, performance and risk reporting, manager selection; CFA explicitly preferred; BNP Securities Services + Guosen product monitoring). The stack is a partial match: Python and SQL are strong, but there's no R, and quant work (attribution, factor backtesting) is off-CV.
 - Source: LinkedIn
 - Contract: Permanent, full time

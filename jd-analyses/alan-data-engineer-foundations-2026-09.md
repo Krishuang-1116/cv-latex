@@ -2,6 +2,7 @@
 
 ## Metadata
 - Date: 2026-09-28
+- Status: REJECTED 2026-10-12 (application date not logged; analysed 2026-09-28, so applied around then)
 - Fit Score: High — a NAMED Tier-2 target on your list, on YOUR exact stack (Python, Airflow, Snowflake, dbt, AWS/GCP), and it explicitly welcomes early-career ("from early-career to highly experienced", C0-E level range incl. entry). The AI-agents-as-warehouse-users theme is a rare authentic match for your portfolio. Main gaps: Terraform/IaC and that it's a platform/DE-leaning role (enabling other engineers), not pure analytics modeling.
 - Source: Direct paste (LinkedIn)
 - Contract: Permanent, full-time — hiring across France, Spain, Belgium, Canada

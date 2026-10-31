@@ -1,6 +1,7 @@
 # Elax Energie — Analytics Engineer — 2026-09
 
 ## Metadata
+- Status: APPLIED (date not recorded; confirmed by Kris 2026-10-18)
 - Date: 2026-09-28
 - Fit Score: High — arguably your best thematic match yet. Elax's "Nao" (natural-language query tool whose reliability depends on well-documented dbt models) IS the premise of the AI agent you built. Exact stack (dbt, BigQuery, Dagster, Metabase, Claude, Airbyte), and the seniority gate is EXPLICITLY open to strong internship profiles. French-language role — your French CV is ready.
 - Source: Direct paste (French JD)

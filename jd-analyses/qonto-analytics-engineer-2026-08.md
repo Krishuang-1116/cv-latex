@@ -1,6 +1,7 @@
 # Qonto — Analytics Engineer (x Business Analytics) — 2026-08
 
 ## Metadata
+- Status: REJECTED (CV stage; outright rejection, date not logged). Re-applied Oct 2026, see qonto-analytics-engineer-business-analytics-2026-10.md
 - Date: 2026-08-28
 - Fit Score: High — near 1:1 match. dbt + SQL + dimensional modeling + tests + semantic-layer migration + business partnering + end-to-end ownership is exactly your stack and your BNP/pc_pipeline story. No hard years-of-experience gate, Tier 2 target, explicitly merit-based/inclusive hiring.
 - Source: Direct paste (LinkedIn)

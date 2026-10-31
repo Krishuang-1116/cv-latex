@@ -1,6 +1,7 @@
 # Sia Partners — Consultant Analytics Engineer — 2026-09
 
 ## Metadata
+- Status: REJECTED (reported 2026-10-18; date not recorded). Likely cause: French + English required, consulting client-facing in French.
 - Date: 2026-09-29
 - Fit Score: Medium-High on ATTAINABILITY (you meet or EXCEED the stated requirements; soft 1-3 year gate; your école-de-commerce + data-spec profile is exactly what they ask), Medium on desirability (it's a Tier-3 consultancy fallback with generalist data-consultant scope — BD, publications, training, change management — not deep AE product engineering). One of your most realistic applications.
 - Source: Direct paste (French JD)

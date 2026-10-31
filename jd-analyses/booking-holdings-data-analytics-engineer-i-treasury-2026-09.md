@@ -1,6 +1,7 @@
 # Booking Holdings — Data Analytics Engineer I (Treasury Data Science & Analytics) — 2026-09
 
 ## Metadata
+- Status: REJECTED 2026-10-07
 - Date: 2026-09-29 (just posted)
 - Fit Score: HIGH. Probably the best-aligned JD of the whole search. Junior level (I, 1–3 years); dbt + PySpark + Snowflake; explicit grain/historical coverage; automated DQ incl. reconciliation; workflow management with retries/backfills; Snowflake semantic views for AI-assisted analytics (= your LLM agent over a semantic layer); Streamlit; and the domain is Group Treasury (cash-flow forecasting, liquidity, risk), where the CFA is real domain evidence. Gaps: Docker/Kubernetes, Tableau/Grafana, production on-call/monitoring, "local candidates prioritised".
 - Tailoring effort: LOW (Variant A summary swap; skills same as the Marktlink build).

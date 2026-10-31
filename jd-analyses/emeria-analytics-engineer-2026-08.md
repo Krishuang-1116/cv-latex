@@ -1,6 +1,7 @@
 # Emeria (Foncia) — Analytics Engineer — 2026-08
 
 ## Metadata
+- Status: APPLIED (date not recorded; confirmed by Kris 2026-10-18)
 - Date: 2026-08-28
 - Fit Score: High — the most ATTAINABLE fit of the batch. Stack is a direct hit (Snowflake + dbt + SQL + data modeling + historization + data quality/governance) and the seniority bar is the softest yet: "1 à 2 ans." Caveats: French-language role (French CV needed; you're B2), Tableau not Power BI (minor), salary band €45-55k sits in the Passeport Talent sensitivity zone (verify), and the role leans business-partnering/dashboarding — confirm engineering depth holds.
 - Source: Direct paste (French JD)

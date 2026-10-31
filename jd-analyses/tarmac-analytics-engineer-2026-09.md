@@ -1,6 +1,7 @@
 # Tarmac — Analytics Engineer (Customer Analytics Platform) — 2026-09
 
 ## Metadata
+- Status: APPLIED (date not recorded; confirmed by Kris 2026-10-18)
 - Date: 2026-09-28
 - Fit Score: High — one of your cleanest AE stack matches: dbt + semantic layer + metric definitions + data quality/tests/governance/lineage + CI/CD + AI tools/MCP, on an OMNI-native embedded analytics platform. Redshift is a warehouse swap (SQL transfers). Main caveats: 3-5 years, a heavy solo-ownership scope ("own and scale the platform"), and aviation domain (new, but a "plus"). No hard "senior/lead" gate.
 - Source: Direct paste

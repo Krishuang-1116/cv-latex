@@ -1,6 +1,7 @@
 # In Tandem (OurFamilyWizard) — Analytics Engineer (Finance & Modeling) — 2026-08
 
 ## Metadata
+- Status: APPLIED (date not recorded; confirmed by Kris 2026-10-18)
 - Date: 2026-08-28
 - Fit Score: High — the single best domain fit of the batch. It explicitly rewards BOTH halves of your differentiator at once: "fluent in finance, unwilling to let a number you can't explain go out the door" (CFA + BNP reconciliation/data-quality) AND dbt + real dimensional modeling ("designed marts, not just queried them"). Caveats: 3+ years (softened by a take-home stage and broad "data science/advanced analytics" wording), and shipped statistical forecasting + subscription metrics are real gaps.
 - Source: Direct paste (job board / OurFamilyWizard careers)

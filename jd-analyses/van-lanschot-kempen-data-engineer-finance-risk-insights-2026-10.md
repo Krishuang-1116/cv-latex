@@ -2,7 +2,8 @@
 
 ## Metadata
 - Date: 2026-10-01
-- Status: To apply — reuse `cv_kris_huang_eng.pdf` (byte-identical to the Booking treasury build)
+- Seen again 2026-10-08 (likely repost: now says 0–2 years; Databricks DE certification listed as preferred). Kris thinks she already applied; application not recorded here. Confirm via email/LinkedIn "Applied" tab.
+- Status: REJECTED 2026-10-09 (email in Dutch from Minne van der Zaag, Talent Acquisition: "large number of applications", proceeding with candidates who "align slightly better"; standard template, no specific reason). Applied 2026-10-08 (possibly a second application; the first was likely around 2026-10-01 but not logged). Previously: To apply — reuse `cv_kris_huang_eng.pdf` (byte-identical to the Booking treasury build)
 - Fit Score: Medium — an explicit 0–3 year band (a real junior opening), finance & risk data reporting to the CFO, private banking/investment-product affinity (CFA), and an AI-first mandate all fit. But the stack is Azure/Databricks/ADF/T-SQL, which is fully outside your experience, and it's a bank (private bank / wealth manager).
 - Source: LinkedIn
 - Contract: Permanent (assumed); €3,784–5,676 gross/month + 19.47% flexible budget (13th month + 8% holiday allowance)

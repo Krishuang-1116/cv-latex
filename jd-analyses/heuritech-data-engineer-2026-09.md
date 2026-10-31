@@ -1,6 +1,7 @@
 # Heuritech — Data Engineer — 2026-09
 
 ## Metadata
+- Status: REJECTED (reported 2026-10-18; date not recorded). Likely cause: not recorded.
 - Date: 2026-09-22
 - Fit Score: Medium (Medium-High on REQUIRED skills, pulled down by the DE/infra weighting + seniority). You hit every REQUIRED skill at least partially — and your pc_pipeline portfolio now carries real Airflow orchestration + incremental models + a semantic-layer AI agent, which is unusually strong evidence for your level. Gated by: this is a heavier DE/infra role (crawling stack, K8s, Celery, observability) than the AE roles, and it wants "several years... ideally 3-5+".
 - Source: Direct paste (Heuritech)

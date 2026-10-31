@@ -1,6 +1,7 @@
 # Valtech — Data Engineer (Snowflake) — 2026-09
 
 ## Metadata
+- Status: APPLIED (date not recorded; confirmed by Kris 2026-10-18)
 - Date: 2026-09-28
 - Fit Score: Medium-High — strong stack match on YOUR modern lane (Snowflake + dbt + Python + advanced SQL + Git/CI-CD + data quality/testing + layered architecture), and Agentic AI / Snowflake Cortex / AI-enabled data products is a listed nice-to-have (your differentiator). Gaps: production-DE-at-scale (fault-tolerance, observability, monitoring, Snowflake cost/perf tuning on large datasets), a consulting/agency model (client-facing), and it's DE-ops-leaning. No hard years number; softened by strong "apply even with gaps" language.
 - Source: Direct paste
